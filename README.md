@@ -5,6 +5,10 @@ Currently this repository holds the files for the python section of the course (
 
 The Python_tutorial_python3.ipynb jupyter notebook contains the course instructions and is accompanied by the Python_tutorial_solutions_python3.ipynb notebook which contains the solutions.
 
-All other files are used as part of the notebook's exercises.
+Python requirements are: python 3.6+, MDAnalysis (conda-forge channel), Numpy, Matplotlib, nglview (bioconda channel).
+
+Known bugs: The nglview part of the notebook is known to be faulty in non-Linux environments (Windows & MacOS).
+
+The setup.sh bash script will automatically set up a local anaconda python 3.6 environment named `WTcourse` adding relevant exports to your .bashrc file.
 
 Authors: Marc Daemgen, Anna Duncan, Nicholas Michelarakis, Fiona Naughton, Naushad Velgy, William Glass and Irfan Alibay
