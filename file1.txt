@@ -1,0 +1,6 @@
+This is a file containing a  list of peptide sequences:
+ASDIPREDSDFLLLKK
+HFVNNNWERT
+PLSDMASI
+KWHGLLGSF
+QERTKMSFFWER

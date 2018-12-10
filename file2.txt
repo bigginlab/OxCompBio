@@ -1,0 +1,4 @@
+In this new file
+this is the second line
+and this is the third line
+this line will be appended

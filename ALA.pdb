@@ -1,0 +1,28 @@
+TITLE     ALANINE DIPEPTIDE
+REMARK    THIS IS A SIMULATION BOX
+CRYST1   37.100   37.100   37.100  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  CL  ALAD    1      -6.140   1.760   3.130  1.00  0.00            
+ATOM      2  HL1 ALAD    1      -6.360   0.750   3.540  1.00  0.00            
+ATOM      3  HL2 ALAD    1      -6.440   1.640   2.070  1.00  0.00            
+ATOM      4  HL3 ALAD    1      -5.070   2.050   3.220  1.00  0.00            
+ATOM      5  CLP ALAD    1      -7.060   2.750   3.770  1.00  0.00            
+ATOM      6  OL  ALAD    1      -8.150   2.380   4.200  1.00  0.00            
+ATOM      7  NL  ALAD    1      -6.670   4.030   3.900  1.00  0.00            
+ATOM      8  HL  ALAD    1      -5.750   4.220   3.550  1.00  0.00            
+ATOM      9  CA  ALAD    1      -7.460   5.140   4.300  1.00  0.00            
+ATOM     10  HA  ALAD    1      -6.820   5.990   4.090  1.00  0.00            
+ATOM     11  CB  ALAD    1      -8.880   5.330   3.720  1.00  0.00            
+ATOM     12  HB1 ALAD    1      -9.520   4.590   4.250  1.00  0.00            
+ATOM     13  HB2 ALAD    1      -9.250   6.360   3.920  1.00  0.00            
+ATOM     14  HB3 ALAD    1      -8.870   5.160   2.630  1.00  0.00            
+ATOM     15  CRP ALAD    1      -7.420   5.370   5.770  1.00  0.00            
+ATOM     16  OR  ALAD    1      -6.870   6.310   6.350  1.00  0.00            
+ATOM     17  NR  ALAD    1      -7.930   4.380   6.520  1.00  0.00            
+ATOM     18  HR  ALAD    1      -8.250   3.540   6.080  1.00  0.00            
+ATOM     19  CR  ALAD    1      -7.520   4.280   7.890  1.00  0.00            
+ATOM     20  HR1 ALAD    1      -6.420   4.110   7.980  1.00  0.00            
+ATOM     21  HR2 ALAD    1      -7.620   5.250   8.400  1.00  0.00            
+ATOM     22  HR3 ALAD    1      -7.970   3.420   8.430  1.00  0.00            
+TER
+ENDMDL
