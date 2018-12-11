@@ -16,6 +16,16 @@ The nglview part of the notebook is known to be faulty in non-Linux environments
 
 #### Getting started:
 
-Executing the setup.sh bash script will automatically set up a local anaconda python 3.6 environment named `WTcourse` adding relevant exports to your .bashrc file.
+##### On a Linux machine:
+
+1) Install anaconda python (https://www.anaconda.com/download/) for python 3.6+
+2) Execute the setup-conda.sh script which will automatically set up a python environment named `WTcourse`
+3) Before starting the jupyter notebook activate the conda environment via: `source activate WTcourse`
+   If you wish to close this environment do: `source deactivate`
+
+
+##### Oxford Biochemistry VM machines:
+
+Executing the setup-oxfordWT.sh bash script will automatically set up a local anaconda python 3.6 environment named `WTcourse` adding relevant exports to your .bashrc file.
 
 
