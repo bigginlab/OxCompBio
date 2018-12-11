@@ -1,5 +1,5 @@
-# Oxford WT course material
-## Materials for the Oxford Biochemistry WT course
+# Oxford WT Python course material
+## Materials for the Oxford Biochemistry WT Python course
 ### Authors: Marc Daemgen, Anna Duncan, Nicholas Michelarakis, Fiona Naughton, Naushad Velgy, William Glass and Irfan Alibay
 
 Currently this repository holds the files for the python section of the course (to be held on Tuesday the 11th of December 2018).
