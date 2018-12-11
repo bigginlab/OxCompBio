@@ -19,7 +19,7 @@ The nglview part of the notebook is known to be faulty in non-Linux environments
 ##### On a Linux machine:
 
 1) Install anaconda python (https://www.anaconda.com/download/) for python 3.6+
-2) Execute the setup-conda.sh script which will automatically set up a python environment named `WTcourse`
+2) Execute the setup-conda-linux.sh script which will automatically set up a python environment named `WTcourse`
 3) Before starting the jupyter notebook activate the conda environment via: `source activate WTcourse`
    If you wish to close this environment do: `source deactivate`
 
