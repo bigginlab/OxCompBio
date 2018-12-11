@@ -12,7 +12,7 @@ The Python_tutorial_python3.ipynb jupyter notebook contains the course instructi
 Python 3.6+, MDAnalysis (conda-forge channel), Numpy, Matplotlib, nglview (bioconda channel).
 
 #### Known bugs: 
-The nglview part of the notebook is known to be faulty in non-Linux environments (Windows & MacOS).
+The nglview part of the notebook does not work in non-Linux environments (Windows & MacOS).
 
 #### Getting started:
 
