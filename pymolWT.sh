@@ -1,5 +1,5 @@
 #!/bin/bash
 
-grep -v "miniconda2" ~/.bashrc > ~/.bashrc
+sed -i '/miniconda2/d' ~/.bashrc
 
 source ~/.bashrc
