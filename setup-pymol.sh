@@ -1,5 +1,5 @@
 #!/bin/bash
 
-grep -v "anaconda2" ~/.bashrc
+grep -v "miniconda2" ~/.bashrc
 
 source ~/.bashrc
