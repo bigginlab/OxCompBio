@@ -1,0 +1,8 @@
+# python
+__pycache__/
+.mypy_cache
+*.pyc
+.coverage
+
+# jupyter
+.ipynb_checkpoints
