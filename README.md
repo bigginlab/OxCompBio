@@ -1,31 +1,61 @@
 # Oxford WT Python Workshop
-## Materials for the Oxford biochemistry WT python workshop
-### Authors: Marc Daemgen, Anna Duncan, Nicholas Michelarakis, Fiona Naughton, Naushad Velgy, William Glass and Irfan Alibay
 
-Currently this repository holds the files for the python section of the course (to be held on Tuesday the 11th of December 2018).
+## Contents
 
-#### Contents:
+## Requirements
 
-The Python_tutorial_python3.ipynb jupyter notebook contains the course instructions and is accompanied by the Python_tutorial_solutions_python3.ipynb notebook which contains the solutions.
+Python 3.6 or higher is required for this workshop. Note that Python 2.x will reach End of Life (EOL) the 1st of January 2020.
 
-#### Python requirements:
-Python 3.6+, MDAnalysis (conda-forge channel), Numpy, Matplotlib, nglview (bioconda channel).
+### Conda
 
-#### Known bugs: 
-The nglview part of the notebook does not work in non-Linux environments (Windows & MacOS).
+### Environment
 
-#### Getting started:
+Create a Python environment with all the necessary libraries using `conda`:
 
-##### On a Linux machine:
+```bash
+conda env create -f conda.yml
+```
 
-1) Install anaconda python (https://www.anaconda.com/download/) for python 3.6+
-2) Execute the setup-conda-linux.sh script which will automatically set up a python environment named `WTcourse`
-3) Before starting the jupyter notebook activate the conda environment via: `source activate WTcourse`
-   If you wish to close this environment do: `source deactivate`
+#### Libraries
 
+Default conda channel:
 
-##### Oxford Biochemistry VM machines:
+* [`numpy`](https://numpy.org/)
+* [`matplotlib`](https://matplotlib.org/)
 
-Executing the setup-oxfordWT.sh bash script will automatically set up a local anaconda python 3.6 environment named `WTcourse` adding relevant exports to your .bashrc file.
+[conda-forge](https://conda-forge.org/) channel:
 
+* [`MDAnalysis`](https://www.mdanalysis.org/)
+* [`jupyterlab`](https://jupyterlab.readthedocs.io/en/stable/)
 
+[bioconda](http://bioconda.github.io/) channel:
+
+* [`nglview`](http://nglviewer.org/nglview/latest/)
+
+#### Known Bigs
+
+`nglview` does not work in non-Linux environments (Windows & MacOS).
+
+## Getting Started
+
+### Linux
+
+1. Install [Anaconda](https://www.anaconda.com/download/) for Python 3.6 or higher
+2. Execute the `setup-conda-linux.sh` script which will automatically set up a Python environment named `WTcourse`
+3. Activate the conda environment with: `source activate WTcourse`
+
+### Oxford Biochemistry VMs
+
+1. Execute the `setup-oxfordWT.sh` script which will automatically set up a local [Anaconda](https://www.anaconda.com/download/) named `WTcourse`
+
+## Acknowledgements
+
+### Authors
+
+* Marc Daemgen
+* Anna Duncan
+* Nicholas Michelarakis
+* Fiona Naughton
+* Naushad Velgy
+* William Glass
+* Irfan Alibay
