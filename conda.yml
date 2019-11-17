@@ -1,0 +1,26 @@
+name: WTcourse
+
+channels:
+  - default
+  - conda-forge
+  - bioconda
+
+dependencies:
+  # Base
+  - python=3.6
+  - pip
+  - ipython
+
+  # Jupyter
+  - jupyterlab
+
+  # Maths
+  - numpy
+
+  # Viz
+  - matplotlib
+
+  # Dev
+  - flake8
+  - black
+  - isort
