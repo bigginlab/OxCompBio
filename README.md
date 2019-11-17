@@ -8,6 +8,10 @@ Python 3.6 or higher is required for this workshop. Note that Python 2.x will re
 
 ### Conda
 
+#### Anaconda Distribution
+
+#### Miniconda
+
 ### Environment
 
 Create a Python environment with all the necessary libraries using `conda`:
