@@ -3,7 +3,6 @@ name: WTcourse
 channels:
   - default
   - conda-forge
-  - bioconda
 
 dependencies:
   # Base
