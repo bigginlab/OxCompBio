@@ -7,5 +7,10 @@ __pycache__/
 # jupyter
 .ipynb_checkpoints
 
+# editors
+.vscode
+.idea
+*~
+
 # os
 .DS_Store
