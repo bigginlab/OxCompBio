@@ -3,6 +3,7 @@ name: WTcourse
 channels:
   - default
   - conda-forge
+  - bioconda
 
 dependencies:
   # Base
@@ -11,6 +12,7 @@ dependencies:
   - ipython
 
   # Jupyter
+  - jupyter
   - jupyterlab
 
   # Maths
