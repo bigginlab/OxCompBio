@@ -9,7 +9,7 @@ export PATH=${PATH}:"${HOME}/conda3/bin"
 echo 'export PATH=${PATH}:"${HOME}/conda3/bin"' >> ~/.bashrc 
 
 # Create and source WTcourse conda environment
-conda env create -f conda.yml
+conda env create -f binder/environment.yml
 source activate WTcourse
 
 echo "source activate WTcourse" >> ~/.bashrc
