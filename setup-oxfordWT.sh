@@ -1,27 +1,20 @@
 #!/bin/bash
 
-# Set up conda environment
-
+# Download and install Anaconda (miniconda)
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -f -p $HOME/conda3
 
+# Add Anaconda to PATH
 export PATH=${PATH}:"${HOME}/conda3/bin"
-
 echo 'export PATH=${PATH}:"${HOME}/conda3/bin"' >> ~/.bashrc 
 
-# Create correct conda environment
+# Create and source WTcourse conda environment
+conda env create -f conda.yml
+source activate WTcourse
 
 echo "source activate WTcourse" >> ~/.bashrc
 
-conda create -y --name WTcourse python=3.6
-source activate WTcourse
-
-conda install -y jupyter
-conda install -y numpy
-conda install -y matplotlib
-conda install -y ipython
-conda install -y mdanalysis -c conda-forge
-conda install -y nglview -c bioconda
+# Activate nglview extension
 jupyter-nbextension enable nglview --py --sys-prefix
 
 echo "setup done"
