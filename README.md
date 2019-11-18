@@ -31,9 +31,6 @@ Default conda channel:
 
 * [`MDAnalysis`](https://www.mdanalysis.org/)
 * [`jupyterlab`](https://jupyterlab.readthedocs.io/en/stable/)
-
-[bioconda](http://bioconda.github.io/) channel:
-
 * [`nglview`](http://nglviewer.org/nglview/latest/)
 
 #### Known Bugs
@@ -63,3 +60,4 @@ Default conda channel:
 * Naushad Velgy
 * William Glass
 * Irfan Alibay
+* Rocco Meli
