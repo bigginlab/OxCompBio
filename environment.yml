@@ -12,6 +12,7 @@ dependencies:
   - ipython
 
   # Jupyter
+  - jupyter
   - jupyterlab
 
   # Maths
