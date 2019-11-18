@@ -1,4 +1,4 @@
-# Oxford WT Python Workshop
+# Oxford WT Python Workshop [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
 
 ## Contents
 
