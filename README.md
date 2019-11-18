@@ -36,7 +36,7 @@ Default conda channel:
 
 * [`nglview`](http://nglviewer.org/nglview/latest/)
 
-#### Known Bigs
+#### Known Bugs
 
 `nglview` does not work in non-Linux environments (Windows & MacOS).
 
