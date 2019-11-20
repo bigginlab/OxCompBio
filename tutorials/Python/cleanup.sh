@@ -1,0 +1,1 @@
+python -m nbconvert --clear-output *.ipynb **/*.ipynb
