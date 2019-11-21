@@ -1,0 +1,1 @@
+python -m nbconvert --ClearOutputPreprocessor.enabled=True --inplace *.ipynb **/*.ipynb
