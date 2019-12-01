@@ -33,10 +33,6 @@ Default conda channel:
 * [`jupyterlab`](https://jupyterlab.readthedocs.io/en/stable/)
 * [`nglview`](http://nglviewer.org/nglview/latest/)
 
-#### Known Bugs
-
-`nglview` does not work in non-Linux environments (Windows & MacOS).
-
 ## Getting Started
 
 ### Linux
@@ -44,10 +40,12 @@ Default conda channel:
 1. Install [Anaconda](https://www.anaconda.com/download/) for Python 3.6 or higher
 2. Execute the `setup-conda-linux.sh` script which will automatically set up a Python environment named `WTcourse`
 3. Activate the conda environment with: `source activate WTcourse`
+4. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000`
 
 ### Oxford Biochemistry VMs
 
 1. Execute the `setup-oxfordWT.sh` script which will automatically set up a local [Anaconda](https://www.anaconda.com/download/) named `WTcourse`
+2. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000`
 
 ## Acknowledgements
 
