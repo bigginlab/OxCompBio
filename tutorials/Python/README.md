@@ -12,7 +12,7 @@ Python 3.6 or higher is required for this workshop. Note that Python 2.x will re
 
 ### Conda
 
-This tutorial uses several [libraries](### Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in [Anaconda python distributions](https://www.anaconda.com/distribution/).
+This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in [Anaconda python distributions](https://www.anaconda.com/distribution/).
 
 If you are attending the Oxford Computational Biochemistry workshop and are using the Linux VM, this has already been installed for you.
 
@@ -34,7 +34,7 @@ Default conda channel:
 
 ### Linux and MacOS
 
-1. These instructions assume that an [anaconda](###Conda) python distribution is installed locally.
+1. These instructions assume that an [anaconda](#Conda) python distribution is installed locally.
 2. Execute the `setup-conda-linux.sh` script which will automatically set up a Python environment named `WTcourse`
 3. Activate the conda environment using: `conda activate WTcourse`.
 4. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook`.
@@ -42,7 +42,7 @@ Default conda channel:
 
 ### Binder
 
-If you wish to follow this tutorial from your own computer and do not wish to install [anaconda](### Conda) python, or are using Windows, you can run this tutorial completely online using [binder](https://mybinder.org/).
+If you wish to follow this tutorial from your own computer and do not wish to install [anaconda](#Conda) python, or are using Windows, you can run this tutorial completely online using [binder](https://mybinder.org/).
 
 1. Click on the following [link](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
 2. Navigate to the Python tutorial and the relevant tutorial section.
