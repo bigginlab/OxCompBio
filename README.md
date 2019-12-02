@@ -5,16 +5,16 @@ This two and half day course is aimed at graduate students who have had no prior
 
 ## Tutorials
 
-### Molecular Dynamics
+### 1) Molecular Dynamics
 
-### Python [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
+### 2) Python [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
 
 A set of jupyter notebooks which aim to teach the basics of python programming assuming no prior knowledge.
 First introducing core concepts such as variables, loops, conditionals and lists, we eventually demonstrate how Molecular Dynamics simulations can be analysed using python libraries such as [MDAnalysis](https://www.mdanalysis.org/) and [NGLView](http://nglviewer.org/nglview/latest/).
 
-### Homology Modelling
+### 3) Homology Modelling
 
-### Molecular Docking
+### 4) Molecular Docking
 
 ## Acknowledgements
 
