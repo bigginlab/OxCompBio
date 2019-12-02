@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Create WTcourse conda environment
+# Create conda environment
 conda env create -f ../../environment.yml
-source activate WTcourse
+source activate oxpy
 
 jupyter-nbextension enable nglview --py --sys-prefix
 
