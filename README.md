@@ -1,61 +1,25 @@
-# Oxford WT Python Workshop [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
+# Oxford Computational Biochemistry course
 
-## Contents
+This repository contains the teaching materials for the Oxford Computational Biochemistry course.
+This two and half day course is aimed at graduate students who have had no prior experience in the area of Computational Biochemistry. It assumes no prior knowledge and only tries to cover basic concepts.
 
-## Requirements
+## Tutorials
 
-Python 3.6 or higher is required for this workshop. Note that Python 2.x will reach End of Life (EOL) the 1st of January 2020.
+### 1) Molecular Dynamics
 
-### Conda
+### 2) Python [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
 
-#### Anaconda Distribution
+A set of jupyter notebooks which aim to teach the basics of python programming assuming no prior knowledge.
+First introducing core concepts such as variables, loops, conditionals and lists, we eventually demonstrate how Molecular Dynamics simulations can be analysed using python libraries such as [MDAnalysis](https://www.mdanalysis.org/) and [NGLView](http://nglviewer.org/nglview/latest/).
 
-#### Miniconda
+### 3) Homology Modelling
 
-### Environment
-
-Create a Python environment with all the necessary libraries using `conda`:
-
-```bash
-conda env create -f conda.yml
-```
-
-#### Libraries
-
-Default conda channel:
-
-* [`numpy`](https://numpy.org/)
-* [`matplotlib`](https://matplotlib.org/)
-
-[conda-forge](https://conda-forge.org/) channel:
-
-* [`MDAnalysis`](https://www.mdanalysis.org/)
-* [`jupyterlab`](https://jupyterlab.readthedocs.io/en/stable/)
-* [`nglview`](http://nglviewer.org/nglview/latest/)
-
-## Getting Started
-
-### Linux
-
-1. Install [Anaconda](https://www.anaconda.com/download/) for Python 3.6 or higher
-2. Execute the `setup-conda-linux.sh` script which will automatically set up a Python environment named `WTcourse`
-3. Activate the conda environment with: `source activate WTcourse`
-4. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000`
-
-### Oxford Biochemistry VMs
-
-1. Execute the `setup-oxfordWT.sh` script which will automatically set up a local [Anaconda](https://www.anaconda.com/download/) named `WTcourse`
-2. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000`
+### 4) Molecular Docking
 
 ## Acknowledgements
 
-### Authors
+The Oxford Computational Biochemistry course has been written by several authors over several years.
+Please see individual tutorials for contributor logs.
 
-* Marc Daemgen
-* Anna Duncan
-* Nicholas Michelarakis
-* Fiona Naughton
-* Naushad Velgy
-* William Glass
-* Irfan Alibay
-* Rocco Meli
+Course leader: Professor Philip C. Biggin
+
