@@ -34,7 +34,7 @@ Default conda channel:
 
 ### Linux and MacOS
 
-1. These instructions assume that an [anaconda](### Conda) python distribution is installed locally.
+1. These instructions assume that an [anaconda](###Conda) python distribution is installed locally.
 2. Execute the `setup-conda-linux.sh` script which will automatically set up a Python environment named `WTcourse`
 3. Activate the conda environment using: `conda activate WTcourse`.
 4. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook`.
