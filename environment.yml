@@ -3,7 +3,6 @@ name: oxpy
 channels:
   - default
   - conda-forge
-  - bioconda
 
 dependencies:
   # Base
