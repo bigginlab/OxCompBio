@@ -17,10 +17,12 @@ First introducing core concepts such as variables, loops, conditionals and lists
 Contains a practical tutorial and lecture slides that aim to:
 
   • Introduce the process of homology modelling.
+  
   • Summarise the methods for predicting the structure from sequence.
+  
   • Describe the individual steps involved in creating and optimising a protein homology model.
-  • Outline the methods available to evaluate the quality of homology models homology models.
-
+  
+  • Outline the methods available to evaluate the quality of homology models.
 
 ### 4) Molecular Docking
 
