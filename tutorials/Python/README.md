@@ -55,4 +55,3 @@ Note: binder is a free community-run service, load times can be slow during init
 This tutorial was first created in 2017 as part of the Oxford Wellcome Trust course. It is the product of the work of several authors who have contributed to it over the years. Please see `CONTRIBUTORS.md` for a full list of acknowledgements. As the tutorial was not originally tracked on github, our apologies if any authors have been missed from this list.
 
 If you happen to contribute to the python tutorial, please add yourself to this list.
-
