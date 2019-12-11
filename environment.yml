@@ -12,7 +12,6 @@ dependencies:
 
   # Jupyter
   - jupyter
-  - jupyterlab
 
   # Maths
   - numpy
@@ -23,8 +22,3 @@ dependencies:
   # MD
   - MDAnalysis
   - nglview
-
-  # Dev
-  - flake8
-  - black
-  - isort
