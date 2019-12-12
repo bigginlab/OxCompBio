@@ -11,6 +11,7 @@ __pycache__/
 .vscode
 .idea
 *~
+.swp
 
 # os
 .DS_Store
