@@ -9,7 +9,7 @@ The tutorial also makes use of the VMD software for visualisation purposes, Grom
 ## Requirements
 The following packages were used: 
 
-Gromacs version 2019.
+Gromacs version 2018.
 VMD version 1.9.2.
 Grace version 5.1.25
 
