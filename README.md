@@ -11,7 +11,7 @@ Contains lecture slides on the Molecular Dynamics method and a practical [GROMAC
 
 - Setup, equilibrate and simulate a protein-ligand system in water.
 - Visualise the system and its trajectory with [VMD](https://www.ks.uiuc.edu/Research/vmd/).
-- Perform basic analysis utilising implemented GROMACS tools and the [xmgrace](http://plasma-gate.weizmann.ac.il/Grace/doc/UsersGuide.html) plotting tool.
+- Perform basic analysis utilising GROMACS tools and the [xmgrace](http://plasma-gate.weizmann.ac.il/Grace/doc/UsersGuide.html) plotting tool.
 
 ### 2) Python [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
 
