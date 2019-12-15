@@ -2,13 +2,15 @@
 
 ## Contents
 
-The Oxford Computational Biochemistry Molecular Dynamics tutorial utilises the  GROMACS simulation package and describes the steps for setting up, equilibrating and simulating a protein-ligand system in water. 
+The Oxford Computational Biochemistry Molecular Dynamics tutorial utilises the GROMACS simulation package and describes the steps for setting up, equilibrating and simulating a protein in water. 
 
 The tutorial also makes use of the VMD software for visualisation purposes, Gromacs tools for performing basic analysis and the xmgrace package for plotting.
 
-The md-prac.html file contains the detailed instructions required for the tutorial (and have also been handed out) and can be opened with a browser by typing on a terminal:
+The md-prac.html file contains the detailed instructions required for the tutorial (which have also been handed out to you if you are attending the tutorial in person) and can be opened with a browser by typing on a terminal:
+```
 
 firefox md-prac.html
+```
 
 The lecture slides are also included in .pdf format.
 
