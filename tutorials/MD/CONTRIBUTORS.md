@@ -1,9 +1,9 @@
-# List of contributors to the Oxford Computational Biochemitry molecular dynamics course
+# List of contributors to the Oxford Computational Biochemitry Molecular Dynamics course
 
-- Afroditi-Maria Zaki
-- Marc Daemgen
 - Matteo Aldeghi
 - Philip Biggin
+- Marc Daemgen
+- Ben Hall
 - Syma Khalid
 - Ranjit Vijayan
-- Ben Hall
+- Afroditi-Maria Zaki
