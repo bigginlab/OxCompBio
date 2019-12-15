@@ -6,19 +6,21 @@ The Oxford Computational Biochemistry Molecular Dynamics (MD) tutorial utilises 
 
 The tutorial also makes use of the VMD software for visualisation purposes, Gromacs tools for performing basic analysis and the xmgrace package for plotting.
 
-The md-prac.html file contains the detailed instructions required for the tutorial (which have also been handed out to you if you are attending the tutorial in person) and can be opened with a browser by typing on a terminal:
+The `md-prac.html` file contains the detailed instructions required for the tutorial (which have also been handed out to you if you are attending the tutorial in person) and can be opened with a browser by typing on a terminal:
 ```
 
 firefox md-prac.html
 ```
-The Introduction_to_MD_2019.pdf file includes the MD lecture slides.
+The `Introduction_to_MD_2019.pdf` file contains the MD lecture slides.
 
 ## Requirements
 The following software packages were used: 
 
-Gromacs version 2018.
-VMD version 1.9.2.
-Grace version 5.1.25
+   • [GROMACS](http://www.gromacs.org/) version 2018.
+   
+   • [VMD](https://www.ks.uiuc.edu/Research/vmd/) version 1.9.2.
+   
+   • [Grace](http://plasma-gate.weizmann.ac.il/Grace/doc/UsersGuide.html) version 5.1.25.
 
 If you are attending the Oxford Computational Biochemistry workshop and are using the Linux VM, these have already been installed for you.
 
