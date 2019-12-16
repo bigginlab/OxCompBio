@@ -1,4 +1,3 @@
-
 In this tutorial we will be building an homology model based on the human adult muscle nAChR (nicotinic acetylcholine receptor).
 
 So that we can model our protein of interest, we must select the best possible template structure of which to base our compartive model on. In order to do this accurately, it helps to consider the following questions:
@@ -30,7 +29,6 @@ Click on the entry number P02708 and locate the FASTA sequence.
 Two isoforms of this subunit exist. Click on the 'Isoform 1' FASTA file download. This will redirect you to a page with the amino acid sequence.
 
 Do this for CHRNB, CHRND and CHRNE sequences as well. These are the other subunits of the adult muscle nAChR.
-
 
 We'll now do a blast search to look for a suitable template sequence. This will be a sequence for which a 3D structure exists that we can use as a template to base our homology model on.
 
@@ -77,4 +75,3 @@ Scroll through your alignment. If there are any insertions or deletions ('indels
 Next we will run a DSSP on our sequence. 
 Click on the 'Web Service' tab and then find 'JPred secondary structure prediction'.
 You should be able to see red lines where alpha-helices have been predicted and green lines for beta-sheets.
-

@@ -1,4 +1,4 @@
-It may help to just build a single subunit in the first instance before generating a full heteromer.
+For large heteromeric proteins- it may help to just try and build a single subunit in the first instance.
 
 1) Make a copy of your .clw file and save it with .ali at the end of the file name. 
 
@@ -37,3 +37,4 @@ Take time with this step as it's the most important. Mistakes made at this point
 12) When ready, type python build_models.py into your terminal.
 
 13) Open the resulting model in pymol with your template to see if the backbones of your structures are similar.
+
