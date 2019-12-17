@@ -327,6 +327,47 @@ http://www.jbc.org/content/263/34/17905.abstract
 
 -->
 
+<h2><li><a name="exercise5" id="exercise5">Exercise 5: Generating the electrostatic surface of the protein</a></li></h2>
+By now you might have realised that electrostatics play a very important role in docking molecules. The purpose of this exercise is to generate and view the surface of the HIV-1 protease structure and to see how a ligand interacts with this.
+<ol type="i" class="roman">
+<li>As we found out earlier, PDB structures do not contain partial charges for the atoms in the structure. Partial charges are crucial for electrostatic calculations. Hence, we need to add that to a PDB file. 
+<li>Create a new directory for this exercise and copy the protein structure - <tt>1HSG_protein.pdb</tt> into this folder.
+<pre>
+% cd ~/OxCompBio/tutorials/Docking/dock-prac/1HSG_APBS
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/1HSG/1HSG_protein.pdb .
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/1HSG/indinavir.pdbqt .
+</pre>
+<!--
+<li>Assign partial charges and atomic radii using a program called <b>PDB2PQR</b>. We will use the  <b>AMBER</b> forcefield to assign partial charges and atomic radii.
+<pre>
+% pdb2pqr --ff=amber 1HSG_protein.pdb 1HSG_protein.pqr
+</pre>
+You should now have a file call <tt>1HSG_protein.pqr</tt>. Open it in a text editor and verify that the last two columns have partial charge and radius for each atom. 
+-->
+<li>PyMOL has a nice plugin for computing and viewing electrostatic surfaces generated using a program called <b>Adaptive Poisson-Boltzmann Solver</b> (APBS) <a href="#references">[5]</a>.
+<li>Open <tt>1HSG_protein.pdb</tt> in PyMOL.
+<pre>
+% pymol 1HSG_protein.pdb &
+</pre>
+<li>Launch the PyMOL APBS plugin using <b>Plugin &gt; APBS Tools</b>.
+<li>On the tab titled <b>Main</b> make sure <b>Use PyMOL generated PQR and PyMOL generated Hydrogens and termini</b> is selected. This adds hydrogens and assigns partial charges and atomic radii to each atom in the PDB file.
+<li>Switch to the <b>Configuration</b> tab and click <b>Set grid</b>. This defines a grid that encloses the protein (Note: Grid is not displayed on the screen). Set the <b>System Temperature</b> to <b>300</b> and set the <b>ion concentration (+1) and (-1)</b> to <b>0.15</b>, which is equivalent of 0.15M cations and cations.
+<li>Click <b>Run APBS</b>. This should take a while. During this period, the APBS plugin window will probably be unresponsive and the <b>Run APBS</b> button will appear depressed. 
+<li>Once the calculations are done, switch to the <b>Visualization</b> tab and click <b>Update</b>. If this does not load and you get an <b>Unable to open file</b> error, type the following in the PyMOL shell.
+<pre>
+PyMOL&gt; load pymol-generated-PE0.dx
+</pre>
+<li>We now want to display the electrostatic surface of the protein. Start with the default positive and negative threshold. Click <b>Show</b> in <b>Molecular Surface</b>. Make the positive threshold higher and negative threshold lower, click <b>Update</b> and observe what happens to the protein surface.
+<li>Load the ligand <tt>indinavir</tt> into PyMOL and display it in stick representation.
+<pre>
+PyMOL&gt; load indinavir.pdbqt
+</pre>
+<li><div id="question">Q: Show/Hide the electrostatic surface and compare with the exposed protein atoms. Does it match up?</div>
+<li><div id="question">Q: Does anything on the protein surface (in the binding site) stand out?</div>
+<li><div id="question">Q: Why is the base of the binding site largely negative? How is it related to catalysis in this case?</div>
+<li><div id="question">Q: Does the protein surface charge (or lack thereof) correspond to complementary regions in the ligand?</div>
+</ol>
+
 <h2><li><a name="discussion" id="discussion">Concluding remarks</a></li></h2>
 In this practical, we have looked at how small molecules could be docked into a protein. This approach is widely used to detect binding sites and also to screen a library of small molecules to find potential drugs that could bind to a known binding site. Scoring functions play an important role in identifying a "good dock" and as such remains an area of active research. Several other considerations are worth noting including water molecules and ions in the binding site, flexibility of binding site residues, etc. Some docking programs (including AutoDock Vina) allow you to define a subset of flexible sidechains. Whilst this permits binding site rearrangement to accommodate distinct ligands, the computational search space increases many fold. Defining water molecules that are important in the binding site also remains an area of active research. In this practical, we have considered only protein-ligand docking. Protein-protein docking is also widely used, but not considered here due to the significantly higher search space that has to be considered. As the number of published and unpublished protein structures continue to grow, <i>in silico</i> docking will continue to play an important role in the drug discovery process.
 
@@ -345,6 +386,7 @@ In this practical, we have looked at how small molecules could be docked into a 
 <tbody><tr><td width="150">PyMOL</td><td><a href="http://www.pymolwiki.org/index.php/Main_Page" target="new">http://www.pymolwiki.org/index.php/Main_Page</a>  (might need to install with conda install -c samoturk pymol)</td>
 </tr><tr><td>AutoDock Tools</td><td><a href="http://autodock.scripps.edu" target="new">http://autodock.scripps.edu</a></td>
 </tr><tr><td>AutoDock Vina</td><td><a href="http://vina.scripps.edu" target="new">http://vina.scripps.edu</a></td>
+</tr><tr><td>APBS</td><td><a href="http://www.poissonboltzmann.org/apbs" target="new">http://www.poissonboltzmann.org/apbs</a></td>
 </tr></tbody></table>
 
 
