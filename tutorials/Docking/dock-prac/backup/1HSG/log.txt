@@ -1,0 +1,33 @@
+Detected 2 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: 2009
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1        -11.5      0.000      0.000
+   2        -10.2      1.972     10.336
+   3        -10.0      1.978     10.840
+   4         -9.9      2.716      5.690
+   5         -9.9      1.446      2.341
+   6         -9.9      2.415     10.624
+   7         -9.9      2.491      4.208
+   8         -9.9      1.777      2.484
+   9         -9.8      1.766      3.609
+  10         -9.8      2.141     10.840
+  11         -9.7      2.507     11.149
+  12         -9.5      2.241      3.527
+  13         -9.5      2.517      6.185
+  14         -9.0      1.953      4.090
+  15         -9.0      2.344      4.969
+  16         -8.9      2.417      4.837
+  17         -8.9      1.910      5.772
+  18         -8.8      3.844     10.762
+  19         -8.7      4.049     10.877
+  20         -8.6      3.890      7.878
+  21         -8.6      2.264      3.354
+Writing output ... done.

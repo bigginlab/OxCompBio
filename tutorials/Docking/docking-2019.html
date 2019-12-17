@@ -8,10 +8,10 @@
 </head><body>
 
 <h1>Session 4: Introduction to <i>in silico</i> docking</h1>
-<b>Phil Biggin</b> Previous input from Greg Ross and Ranjit Vijayan<br><a href="mailto:philip.biggin@bioch.ox.ac.uk">philip.biggin@bioch.ox.ac.uk</a>
+<b>Phil Biggin</b> Input from Greg Ross, Ranjit Vijayan and Irfan Alibay<br><a href="mailto:philip.biggin@bioch.ox.ac.uk">philip.biggin@bioch.ox.ac.uk</a>
 
 <p>This document should also be available online at <a
-href="http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2019.html">http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2019.html</a>.</p>
+href="https://github.com/bigginlab/OxCompBio/tree/master/tutorials/Docking/docking-2019.html">https://github.com/bigginlab/OxCompBio/tree/master/tutorials/Docking/docking-2019.html</a>.</p>
 </p><p>
 </p><h2>Table of Contents</h2>
 <p>
@@ -44,7 +44,7 @@ HIV-1 Protease
 </p>
 
 <h3>What does this practical cover?</h3>
-<p>We will first look at the protein structure (PDB ID: 1HSG) <a href="#references">[3]</a> used in the molecular dynamics practical in a bit more detail. We will then try to dock couple of drug molecules into the binding site to see how well docking can reproduce the binding pose. If time permits, we will generate the electrostatic surface of the protein to study how the drug interacts with the protein.
+<p>We will first look at the protein structure (PDB ID: 1HSG) <a href="#references">[3]</a> used in the molecular dynamics practical in a bit more detail. We will then try to dock a couple of drug molecules into the binding site to see how well docking can reproduce the binding pose. If time permits, we will generate the electrostatic surface of the protein to study how the drug interacts with the protein.
 </p>
 
 <h3>Make sure the tools work</h3>
@@ -54,13 +54,10 @@ Anything that starts with the symbol <tt>%</tt> should be run in a Linux termina
 
 <ol type="i" class="roman">
 <li> All the files you need for this practical can be found at <br><a
-href="http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2019.tar.gz">http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2019.tar.gz</a>. Download and save it to your Desktop. (<i>Note:</i> To do this, you might have to right click the link, select "<b>Save Link As...</b>" and make sure the folder in "<b>Save in folder</b>" is <b>Desktop</b>. Click <b>Save</b>)
-<li> On your Desktop, right click the downloaded file <tt>docking-2018.tar.gz</tt> and select <b>Extract here</b>. This should create a directory called <tt>dock-prac</tt> on your Desktop.
-<li>You may have to download a copy of the mgltools package - you can get the latest version from <a href="http://mgltools.scripps.edu/downloads/downloads/tars/releases/REL1.5.6/mgltools_x86_64Linux2_1.5.6.tar.gz">http://mgltools.scripps.edu/downloads/downloads/tars/releases/REL1.5.6/mgltools_x86_64Linux2_1.5.6.tar.gz</a>
-<li>If you did have to download the above, then uncompress it by issuing <tt>tar -xvfz mgltools_Linux_x86_64Linux2_1.5.6.tar.gz</tt> at the terminal prompt and then run the install script by going into the mgltools directory that just got made and issuing <tt>./install.sh</tt>.  It should then tell you to set up an alias.
-<li>Open a Terminal and make sure you have access to the following commands. Some of these may open up a graphical user interface (GUI). Close it and proceed to the next step. If you get an error or "<tt>Command not found</tt>" inform a demonstrator. (Note to demonstrators:  might be worth just checking that the apbs plugin works within pymol - this is buggy across versions).
+	     href="https://github.com/bigginlab/OxCompBio/tree/master/tutorials/Docking">https://github.com/bigginlab/OxCompBio/tree/master/tutorials/Docking</a>. You can download the OxCompBio material to access it. This can be done by cloning the git directory <tt>git clone https://github.com/bigginlab/OxCompBio.git</tt>. (<i>Note:</i> To do this, you migth have to remove any existing OxCompBio material using <tt>rm -rf ./OxCompBio</tt>).
+     <li>If going through this tutorial in person via the Biochemistry Linux VM, all necessary software should already have been installed for you. If not, see the <b>README.md</b> file for instructions what you will need to install. To test everything is working open a Terminal and make sure you have access to the following commands. Some of these may open up a graphical user interface (GUI). Close it and proceed to the next step. If you get an error or "<tt>Command not found</tt>" inform a demonstrator. (Note to demonstrators:  might be worth just checking that the apbs plugin works within pymol - this is buggy across versions).
 <pre>
-% cd ~/Desktop
+% cd ~/OxCompBio/tutorials/Docking
 % vina --version
 % apbs --version
 % pdb2pqr --help
@@ -83,11 +80,9 @@ Indinavir (Source: http://en.wikipedia.org/wiki/Indinavir)
 <ol type="i" class="roman">
 <li>In a terminal (open a new terminal if you don't have one open already), change to the docking practical directory.
 <pre>
-% cd ~/Desktop/dock-prac
-% mkdir 1HSG
-% cd 1HSG
+% cd ~/OxCompBio/tutorials/Docking/dock-prac/1HSG
 </pre>
-<li>Download the protease structure in PDB format (PDB ID: 1HSG) from the Protein Data Bank (<a href="http://www.pdb.org">http://www.pdb.org</a>). Search using the PDB ID 1HSG. On the results page, click <b>Download Files</b> and select <b>PDB File (Text)</b>. Save it in <tt>~/Desktop/dock-prac/1HSG</tt>. If the internet is down you can get a copy from <tt>~/Desktop/dock-prac/backup/data/1HSG.pdb</tt>. (<i>Note:</i> Once again you might have to right click, select <b>Save Link As...</b> and browse to <tt>/home/biocomp/Desktop/dock-prac/1HSG</tt>. Make sure you set the filename <b>Name</b> to 1HSG.pdb. Click <b>Save</b>)
+<li>Download the protease structure in PDB format (PDB ID: 1HSG) from the Protein Data Bank (<a href="http://www.pdb.org">http://www.pdb.org</a>). Search using the PDB ID 1HSG. On the results page, click <b>Download Files</b> and select <b>PDB File (Text)</b>. Save it in <tt>~/OxCompBio/tutorials/Docking/dock-prac/1HSG</tt>. If the internet is down you can get a copy from <tt>~/OxCompBio/tutorials/Docking/dock-prac/backup/data/1HSG.pdb</tt>. (<i>Note:</i> Once again you might have to right click, select <b>Save Link As...</b> and browse to <tt>/home/biocomp/OxCompBio/tutorials/Docking/dock-prac/1HSG</tt>. Make sure you set the filename <b>Name</b> to 1HSG.pdb. Click <b>Save</b>)
 <li>Load the structure into <tt>pymol</tt>. You should see the protein structure displayed as lines and water molecules as little red crosses.
 <pre>
 % pymol 1HSG.pdb &amp;
@@ -123,7 +118,7 @@ PyMOL&gt; png protein.png
 </ol>
 
 <h2><li><a name="exercise2" id="exercise2">Exercise 2: Preparing the protein and ligand for docking</a></li></h2>
-<p>Docking algorithms require each atom to have a charge and an atom type that describes its properties. However, the PDB structure lacks these. So, we have to prep the protein and ligand files to include these values along with the atomic coordinates. Furthermore, for flexible ligand docking, we should also define ligand bonds that are rotatable. All this will be done in a tool called AutoDock Tools (<tt>autodocktools</tt>).</p>
+<p>Docking algorithms require each atom to have a charge and an atom type that describes its properties. However, the PDB structure lacks these. So, we have to prep the protein and ligand files to include these values along with the atomic coordinates. Furthermore, for flexible ligand docking, we should also define ligand bonds that are rotatable. All this will be done in a tool called AutoDock Tools (<tt>adt</tt>).</p>
 
 <h3>Prepare the protein</h3> 
 <ol type="i" class="roman">
@@ -131,9 +126,9 @@ PyMOL&gt; png protein.png
 <pre>
 % egrep "^(ATOM|TER)" 1HSG.pdb > 1HSG_protein.pdb
 </pre> 
-<li>Lauch AutoDock Tools (ADT) using the command <tt>autodocktools</tt>
+<li>Lauch AutoDock Tools (ADT) using the command <tt>adt</tt>
 <pre>
-% autodocktools &amp;
+% adt &amp;
 </pre>
 <li>Load the protein using <b>File &gt; Read Molecule</b>. Select <tt>1HSG_protein.pdb</tt>. Click <b>Open</b>.<br>
 <b>Note:</b> In ADT, you can translate the molecule by clicking and holding down the right mouse button while moving the mouse, rotate by clicking and holding down the middle button and zoom in/out by using the scroll wheel of the mouse.
@@ -227,24 +222,22 @@ Nelfinavir (Source: http://en.wikipedia.org/wiki/Nelfinavir)
 </td></tr>
 </table>
 <br>
-<li>Start by creating a new directory for this docking run. Your current directory should now be: <tt>~/Desktop/dock-prac/1HSG</tt>. 
+<li>Start by creating a new directory for this docking run. Your current directory should now be: <tt>~/OxCompBio/tutorials/Docking/dock-prac/1HSG</tt>. 
 <pre>
-% cd ~/Desktop/dock-prac
-% mkdir 1HSG_nelfinavir
-% cd 1HSG_nelfinavir
+% cd ~/OxCompBio/tutorials/Docking/dock-prac/1HSG_nelfinavir
 </pre>
 <li>Since we will be using the same protein structure to dock <tt>nelfinavir</tt>, copy all the protein related files that you created in "Prepare the protein" section.
 <pre>
-% cp ~/Desktop/dock-prac/1HSG/1HSG* .
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/1HSG/1HSG* .
 </pre>
-<li>We need a structure of <tt>nelfinavir</tt>. There should be a copy in <tt>~/Desktop/dock-prac/backup/nelfinavir.pdb</tt>. Copy it to the current directory
+<li>We need a structure of <tt>nelfinavir</tt>. There should be a copy in <tt>~/OxCompBio/tutorials/Docking/dock-prac/backup/nelfinavir.pdb</tt>. Copy it to the current directory
 <pre>
-% cp ~/Desktop/dock-prac/backup/data/nelfinavir.pdb .
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/backup/data/nelfinavir.pdb .
 </pre>
-<li>Prep the ligand file and generate the PDBQT file - <tt>nelfinavir.pdbqt</tt> - using the steps use in the "<b>Prepare the ligand</b>" section.
+<li>Prep the ligand file and generate the PDBQT file - <tt>nelfinavir.pdbqt</tt> - using the steps used in the "<b>Prepare the ligand</b>" section.
 <li>Since the binding site is the same, copy the docking config file - <tt>config.txt</tt> - from the previous exercise to the current directory.
 <pre>
-% cp ~/Desktop/dock-prac/1HSG/config.txt .
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/1HSG/config.txt .
 </pre>
 <li>You have to change one entry in the configuration file. Make the change.
 <li>Now you should have everything required by AutoDock Vina to generate a series of docking modes.
@@ -262,7 +255,7 @@ This will take a few minutes to run...
 <li><div id="question">Q: How would you check whether the conformation makes sense?</div>
 <li><div id="question">Q: How would you look at it from a "virtual screening" perspective?</div>
 <li>Fortunately, in this instance, there are crystal structures of <tt>nelfinavir</tt> bound to HIV-1 protease inhibitor that you can use to validate your docking results. 
-<li>Use the Protein Data Bank and download the PDB file for <b>1OHR</b>. Save it in the current directory - <tt>~/Desktop/dock-prac/1HSG_nelfinavir</tt>. (If the internet is down, there should be a copy in <tt>~/Desktop/dock-prac/backup/data/1OHR.pdb</tt>).
+<li>Use the Protein Data Bank and download the PDB file for <b>1OHR</b>. Save it in the current directory - <tt>~/OxCompBio/tutorials/Docking/dock-prac/1HSG_nelfinavir</tt>. (If the internet is down, there should be a copy in <tt>~/OxCompBio/tutorials/Docking/dock-prac/backup/data/1OHR.pdb</tt>).
 <li>Load this structure into PyMOL using <b>File &gt; Open...</b>. Select <b>1OHR.pdb</b> and click <b>OK</b>.
 <li>Hide all representations of <b>1OHR</b> using <b>H</b> and then <b>everything</b>. Now, display <b>1OHR</b> as <b>cartoon</b> and <b>colour</b> by <b>chain</b>.
 <li>You may have observed that the two HIV-1 protease structures are in different orientations in space. To make sense of the docking results, you have to align the two structures. You can use the PyMOL <tt>align</tt> command to do this. In the PyMOL command line, type:
@@ -270,7 +263,7 @@ This will take a few minutes to run...
 PyMOL&gt; align 1OHR, 1HSG_protein
 </pre>
 <b>1OHR</b> should now be overlaid on <b>1HSG_protein</b>
-<br><i>Note:</i> A copy of the aligned structure can be found in <tt>~/Desktop/dock-prac/backup/data/1OHR_aligned.pdb</tt> if the <tt>align</tt> command does not work.<br>
+<br><i>Note:</i> A copy of the aligned structure can be found in <tt>~/OxCompBio/tutorials/Docking/dock-prac/backup/data/1OHR_aligned.pdb</tt> if the <tt>align</tt> command does not work.<br>
 
 <li><div id="question">Q: What is the RMSD of the alignment? Is it qualitatively and quantitatively good?</div>
 <li>You may have observed that moving the structure around the window is a bit difficult since the origin of the view has been altered when you loaded <tt>1OHR.pdb</tt>. To reset it, try:
@@ -340,10 +333,9 @@ By now you might have realised that electrostatics play a very important role in
 <li>As we found out earlier, PDB structures do not contain partial charges for the atoms in the structure. Partial charges are crucial for electrostatic calculations. Hence, we need to add that to a PDB file. 
 <li>Create a new directory for this exercise and copy the protein structure - <tt>1HSG_protein.pdb</tt> into this folder.
 <pre>
-% mkdir ~/Desktop/dock-prac/1HSG_APBS
-% cd ~/Desktop/dock-prac/1HSG_APBS
-% cp ~/Desktop/dock-prac/1HSG/1HSG_protein.pdb .
-% cp ~/Desktop/dock-prac/1HSG/indinavir.pdbqt .
+% cd ~/OxCompBio/tutorials/Docking/dock-prac/1HSG_APBS
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/1HSG/1HSG_protein.pdb .
+% cp ~/OxCompBio/tutorials/Docking/dock-prac/1HSG/indinavir.pdbqt .
 </pre>
 <!--
 <li>Assign partial charges and atomic radii using a program called <b>PDB2PQR</b>. We will use the  <b>AMBER</b> forcefield to assign partial charges and atomic radii.
