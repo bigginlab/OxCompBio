@@ -32,6 +32,12 @@ Contains a practical tutorial and lecture slides that aim to:
 
 ### 4) Molecular Docking
 
+A tutorial which aims to teach the basics of molecular docking.
+
+The tutorial contains:
+- Lecture slides introducing the concept of molecular docking.
+- A tutorial which looks at using [Autodock Vina](http://vina.scripps.edu/) to dock small ligands to HIV-1 protease.
+
 ## Acknowledgements
 
 The Oxford Computational Biochemistry course has been written by several authors over several years.
