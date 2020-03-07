@@ -8,9 +8,12 @@ Open the model in pymol and locate the cysteine residues that should be bonded.
 
 To help speed up the process, type 'select. br resname CYS' into the pymol GUI to help find the correct residues.
 
-Adapts your .ali file so that your structure is replaced with the sequence of your model. You should therefore have an alignemnt of your homology model with your homology model.
+Copy your .ali file made previously into this directory.
+
+You now need to adapt this .ali file so that your template structure is replaced with the sequence of your model. You should therefore have an alignment of your homology model with your homology model.
 
 Adapt the disu.py script to build in a disulfide bond where required.
 
+You can keep the number of models generated to 1 here.
 
 

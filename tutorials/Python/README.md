@@ -4,7 +4,7 @@
 
 The Oxford Computational Biochemistry Python Tutorial is a series of notebooks which aim to teach the basics of python to new users. It assumes no prior knowledge of python or any other programming languages.
 
-The tutorial is broken down into 11 sections which progressively introduce various python concepts. We recommend that these be followed in order, however those already acquainted with python may wish to skip ahead to some of the later topics.
+The tutorial is broken down into 12 sections which progressively introduce various python concepts. We recommend that these be followed in order, however those already acquainted with python may wish to skip ahead to some of the later topics.
 
 ## Requirements
 
