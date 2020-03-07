@@ -1,6 +1,6 @@
 # List of contributors to the Oxford Computational Biochemitry python course
 
-Authors are added at each year of contribution and sorted by last name alphebetical order.
+Authors are added at each year of contribution and sorted by last name alphabetical order.
 
 ## 2019
 
