@@ -47,6 +47,6 @@ Course leader: Professor Philip C. Biggin
 
 ## License
 
-The code is released under the [BSD-3](https://opensource.org/licenses/BSD-3-Clause) license (see `LICENSE` file) while other content is released under a [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license (see below).
+The code is released under the [BSD-3](https://opensource.org/licenses/BSD-3-Clause) license (see `LICENSE` file) while other content is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license (see below).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
