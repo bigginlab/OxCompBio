@@ -1,0 +1,1080 @@
+MODEL 1
+REMARK VINA RESULT:     -11.2      0.000      0.000
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      10.855  23.927   2.672  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201       9.627  24.790   3.097  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201       8.354  24.286   2.443  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201       8.174  22.809   2.751  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201       9.390  22.005   2.269  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      10.669  22.450   3.050  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      12.005  24.428   4.815  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      10.889  25.283   5.275  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201       9.555  24.797   4.639  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      12.107  24.536   3.340  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      13.311  24.890   5.293  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      14.354  23.808   4.970  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      14.595  22.785   6.083  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      15.592  21.881   5.528  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      15.280  20.577   5.386  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      14.181  20.121   5.733  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      16.465  22.229   5.245  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      16.334  19.735   4.865  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      17.389  19.325   5.712  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201      18.441  18.544   5.248  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201      18.426  18.141   3.925  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201      17.390  18.554   3.074  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      16.319  19.330   3.523  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      15.260  19.752   2.542  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201      17.462  18.280   1.732  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201      17.920  18.987   1.294  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      15.197  23.314   7.352  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      14.796  22.209   8.720  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      16.265  21.380   9.071  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      17.430  21.972   8.603  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201      18.625  21.320   8.840  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201      18.639  20.105   9.533  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      17.459  19.522  10.006  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      16.257  20.182   9.769  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      15.555  24.542   4.701  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      15.665  24.470   3.762  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      10.745  25.171   6.768  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      10.691  24.051   7.315  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      10.608  26.403   7.322  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      10.478  27.186   6.752  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      10.461  26.671   8.773  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201       9.427  25.759   9.409  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201       9.991  28.146   8.958  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      11.845  26.373   9.416  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:     -11.0      1.873      9.624
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      16.197  22.513   8.461  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      17.112  21.273   8.219  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      17.373  20.527   9.515  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201      16.051  20.167  10.170  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      15.214  21.429  10.425  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      14.845  22.110   9.069  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      15.308  22.363   6.147  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      16.167  21.199   5.836  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      16.454  20.394   7.135  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      16.024  23.236   7.107  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      15.079  23.229   4.986  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      13.986  24.245   5.350  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      12.551  23.771   5.105  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      11.729  24.917   5.463  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      10.855  24.799   6.484  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      10.715  23.739   7.110  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      11.832  25.764   4.978  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      10.047  25.966   6.754  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201       9.014  26.328   5.860  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201       8.233  27.461   6.060  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201       8.467  28.229   7.187  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201       9.499  27.886   8.072  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      10.288  26.746   7.894  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      11.390  26.460   8.875  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201       9.825  28.734   9.099  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201       9.329  29.539   9.006  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      12.192  23.449   3.684  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      10.687  22.456   3.649  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201       9.443  23.545   3.162  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201       9.847  24.643   2.415  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201       8.881  25.554   2.033  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201       7.544  25.356   2.395  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201       7.148  24.243   3.142  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201       8.122  23.324   3.524  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      14.276  25.387   4.535  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      15.224  25.423   4.515  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      15.452  20.281   4.883  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      14.223  20.093   4.988  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      16.339  19.694   4.039  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      17.300  19.790   4.193  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      15.984  18.744   2.958  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      17.217  18.228   2.238  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      15.088  19.488   1.920  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      15.274  17.543   3.645  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:     -10.6      0.904      1.519
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      10.823  23.653   3.076  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201       9.761  24.789   3.196  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201       8.463  24.395   2.515  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201       7.976  23.070   3.075  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201       9.043  21.981   2.887  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      10.325  22.341   3.703  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      11.895  24.371   5.197  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      10.938  25.486   5.365  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201       9.583  25.125   4.692  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      12.120  24.153   3.749  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      13.230  24.681   5.719  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      14.247  23.771   5.014  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      14.707  22.558   5.828  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      15.369  21.703   4.853  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      15.096  20.382   4.855  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      14.319  19.872   5.674  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      15.984  22.094   4.196  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      15.821  19.593   3.885  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      15.186  19.198   2.685  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201      15.832  18.411   1.738  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201      17.142  18.038   1.978  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201      17.775  18.413   3.172  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      17.147  19.212   4.131  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      17.886  19.551   5.395  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201      19.016  17.911   3.470  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201      18.920  17.178   4.067  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      15.734  22.823   6.890  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      15.146  22.188   8.472  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      16.456  21.257   9.095  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      17.726  21.621   8.665  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201      18.798  20.877   9.120  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201      18.590  19.799   9.986  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      17.307  19.445  10.417  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      16.229  20.198   9.960  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      15.358  24.630   4.733  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      16.008  24.052   4.353  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      10.671  25.711   6.828  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      11.520  25.386   7.683  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201       9.416  26.199   7.008  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201       8.789  26.227   6.260  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201       8.822  26.552   8.319  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201       7.368  26.969   8.182  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201       9.619  27.753   8.917  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201       8.887  25.267   9.192  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -9.9      1.872      9.195
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      16.064  22.316   8.571  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      17.194  21.311   8.188  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      17.755  20.625   9.421  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201      16.625  19.974  10.199  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      15.566  21.017  10.588  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      14.909  21.617   9.304  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      14.977  22.002   6.362  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      16.028  21.060   5.918  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      16.627  20.321   7.149  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      15.588  22.999   7.272  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      14.436  22.810   5.264  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      12.903  22.792   5.360  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      12.277  24.034   6.001  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      10.943  24.100   5.424  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      10.792  24.626   4.192  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      11.751  25.074   3.546  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      10.176  23.746   5.923  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201       9.434  24.695   3.703  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201       8.969  23.729   2.782  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201       7.682  23.774   2.259  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201       6.834  24.781   2.684  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201       7.291  25.752   3.587  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201       8.577  25.718   4.132  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201       8.999  26.810   5.076  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201       6.499  26.831   3.884  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201       5.970  26.628   4.647  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      12.068  23.979   7.487  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      12.356  25.611   8.199  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      10.784  26.246   8.511  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201       9.754  25.319   8.596  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201       8.475  25.794   8.815  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201       8.248  27.168   8.947  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201       9.294  28.092   8.866  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      10.583  27.611   8.648  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      12.609  21.628   6.142  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      13.008  21.808   6.984  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      15.429  20.019   5.014  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      14.341  19.480   5.303  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      16.269  19.751   3.981  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      17.178  20.112   3.982  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      15.994  18.789   2.888  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      15.311  17.534   3.405  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      17.350  18.374   2.240  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      15.027  19.507   1.904  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -9.8      1.762      3.981
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      10.863  23.988   2.620  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201       9.663  24.904   3.011  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201       8.389  24.460   2.315  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201       8.133  22.992   2.610  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201       9.327  22.136   2.163  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      10.599  22.519   2.985  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      11.966  24.429   4.801  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      10.875  25.332   5.230  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201       9.542  24.909   4.550  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      12.119  24.538   3.331  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      13.276  24.830   5.323  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      13.817  23.689   6.198  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      15.146  23.087   5.733  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      15.431  22.049   6.713  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      16.211  22.350   7.771  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      16.711  23.474   7.922  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      15.039  21.156   6.608  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      16.481  21.258   8.679  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      15.604  21.008   9.759  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201      15.841  19.991  10.676  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201      16.954  19.190  10.497  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201      17.837  19.439   9.436  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      17.612  20.449   8.498  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      18.620  20.667   7.403  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201      19.016  18.742   9.355  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201      18.830  17.811   9.394  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      15.129  22.389   4.405  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      14.580  20.685   4.623  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      15.755  19.728   3.802  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      15.436  19.343   2.507  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201      16.342  18.550   1.829  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201      17.536  18.160   2.444  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      17.850  18.560   3.747  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      16.938  19.362   4.427  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      12.784  22.696   6.167  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      12.086  23.103   5.670  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      10.680  25.221   6.717  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      10.552  24.103   7.256  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      10.588  26.456   7.274  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      10.515  27.247   6.704  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      10.409  26.726   8.720  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201       9.356  25.819   9.334  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201       9.943  28.203   8.895  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      11.777  26.421   9.395  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -9.7      1.409      2.358
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      12.424  23.175   4.141  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      11.967  24.631   3.819  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      10.925  24.644   2.715  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201       9.770  23.733   3.095  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      10.273  22.305   3.355  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      11.244  22.294   4.579  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      12.942  23.810   6.484  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      12.550  25.216   6.246  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      11.472  25.281   5.128  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      13.512  23.258   5.233  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      14.032  23.678   7.456  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      15.248  23.072   6.739  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      15.567  21.622   7.114  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      16.076  21.038   5.882  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      15.390  20.027   5.310  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      14.354  19.568   5.812  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      16.892  21.394   5.472  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      15.978  19.473   4.111  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      15.247  19.481   2.901  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201      15.757  18.930   1.732  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201      17.030  18.388   1.762  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201      17.757  18.362   2.961  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      17.265  18.920   4.144  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      18.097  18.831   5.394  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201      18.949  17.687   3.020  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201      18.874  16.880   2.526  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      16.655  21.424   8.129  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      15.931  20.917   9.702  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      16.936  19.635  10.265  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      18.302  19.886  10.273  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201      19.141  18.870  10.690  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201      18.612  17.638  11.088  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      17.234  17.400  11.081  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      16.389  18.425  10.664  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      16.338  23.929   7.100  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      15.934  24.779   7.224  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      11.943  25.793   7.495  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      12.648  26.002   8.503  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      10.600  25.934   7.344  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      10.151  25.551   6.565  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201       9.683  26.489   8.368  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      10.126  27.866   8.830  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201       9.686  25.536   9.603  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201       8.292  26.619   7.687  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -9.4      1.714      8.648
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      16.019  22.349   8.620  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      17.188  21.441   8.127  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      17.882  20.765   9.296  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201      16.859  20.011  10.128  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      15.760  20.963  10.623  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      14.971  21.548   9.408  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      14.802  22.018   6.481  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      15.883  21.168   5.936  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      16.619  20.442   7.098  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      15.404  23.032   7.379  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      14.129  22.814   5.451  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      14.147  24.286   5.890  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      12.807  24.831   6.392  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      11.820  24.223   5.511  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      10.820  24.988   5.028  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      10.703  26.185   5.329  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      11.903  23.278   5.261  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201       9.858  24.306   4.193  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201       8.483  24.609   4.312  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201       7.519  23.955   3.554  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201       7.936  23.004   2.640  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201       9.297  22.686   2.525  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      10.282  23.339   3.270  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      11.718  22.924   3.105  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201       9.686  21.637   1.731  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201       9.403  20.823   2.131  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      12.405  24.426   7.781  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      12.306  25.888   8.833  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      10.649  26.358   8.789  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      10.399  27.724   8.779  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201       9.080  28.138   8.775  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201       8.046  27.197   8.779  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201       8.310  25.823   8.784  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201       9.639  25.408   8.784  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      14.565  25.001   4.721  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      15.400  25.379   4.967  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      15.297  20.111   5.042  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      14.194  19.594   5.312  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      16.164  19.804   4.042  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      17.077  20.153   4.061  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      15.908  18.817   2.967  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      17.185  18.439   2.238  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      14.926  19.452   1.936  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      15.342  17.547   3.664  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -9.0      2.015      8.132
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      14.568  20.099   3.518  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      14.722  18.717   4.225  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      14.795  17.591   3.210  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201      15.909  17.873   2.216  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      15.681  19.222   1.519  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      15.739  20.382   2.564  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      15.707  21.240   5.406  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      15.866  19.970   6.148  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      15.957  18.783   5.147  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      14.454  21.176   4.619  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      15.511  22.395   6.288  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      14.121  22.280   6.932  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      13.304  23.575   6.949  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      12.074  23.231   6.249  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      11.843  23.771   5.036  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      12.633  24.567   4.508  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      11.441  22.600   6.654  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      10.584  23.414   4.422  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      10.485  22.228   3.660  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201       9.305  21.860   3.024  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201       8.196  22.674   3.175  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201       8.289  23.861   3.917  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201       9.463  24.242   4.572  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201       9.487  25.541   5.329  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201       7.234  24.737   3.934  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201       6.447  24.271   4.192  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      12.871  24.069   8.298  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      12.669  25.860   8.252  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      10.996  26.130   8.565  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      10.230  25.000   8.821  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201       8.879  25.176   9.046  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201       8.320  26.458   9.016  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201       9.103  27.589   8.764  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      10.465  27.411   8.540  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      14.383  21.841   8.270  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      14.423  20.896   8.201  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      17.146  19.998   6.935  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      18.244  20.117   6.354  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      16.893  19.796   8.254  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      16.000  19.527   8.547  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      17.920  19.778   9.324  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      17.290  19.801  10.705  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      18.813  21.047   9.174  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      18.701  18.444   9.159  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -9.0      2.158      8.860
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      14.609  19.858   2.919  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      14.581  18.776   4.043  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      14.989  17.417   3.503  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201      16.341  17.526   2.821  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      16.296  18.570   1.695  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      16.005  19.986   2.289  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      15.093  21.636   4.582  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      15.056  20.672   5.704  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      15.479  19.262   5.200  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      14.137  21.190   3.542  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      14.607  22.968   4.959  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      13.264  22.804   5.686  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      12.083  23.534   5.041  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      11.635  24.465   6.066  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      10.311  24.642   6.252  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201       9.466  24.053   5.563  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      12.294  24.936   6.621  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201       9.945  25.611   7.260  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      10.085  25.288   8.629  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201       9.714  26.175   9.633  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201       9.225  27.416   9.266  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201       9.070  27.740   7.911  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201       9.446  26.867   6.887  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201       9.226  27.279   5.457  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201       8.443  28.907   7.557  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201       8.175  29.366   8.344  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      12.400  24.380   3.843  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      11.711  23.615   2.362  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      10.053  24.084   2.347  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201       9.125  23.057   2.459  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201       7.785  23.393   2.420  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201       7.397  24.728   2.274  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201       8.341  25.755   2.169  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201       9.691  25.415   2.211  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      13.506  23.317   7.002  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      12.648  23.577   7.311  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      16.038  21.087   6.764  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      17.246  21.232   6.485  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      15.422  21.172   7.971  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      14.507  20.845   8.078  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      16.082  21.571   9.236  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      17.240  20.651   9.579  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      15.035  21.487  10.389  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      16.641  23.004   9.007  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 10
+REMARK VINA RESULT:      -8.8      1.706      3.866
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      10.768  23.713   2.705  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      10.032  25.042   3.057  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201       8.726  25.161   2.291  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201       7.874  23.929   2.544  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201       8.632  22.656   2.137  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201       9.905  22.483   3.026  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      11.840  23.663   4.944  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      11.197  24.936   5.339  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201       9.845  25.098   4.587  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      12.100  23.697   3.485  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      13.171  23.490   5.535  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      14.212  23.553   4.408  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      15.045  22.282   4.221  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      15.623  22.037   5.534  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      15.106  21.055   6.301  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      14.140  20.371   5.930  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      16.390  22.568   5.838  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      15.706  20.898   7.606  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      15.045  21.402   8.749  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201      15.600  21.304  10.020  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201      16.820  20.667  10.157  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201      17.490  20.177   9.027  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      16.945  20.256   7.743  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      17.737  19.727   6.579  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201      18.764  19.686   9.151  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201      19.384  20.382   8.971  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      14.285  21.034   3.880  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      15.020  20.254   2.429  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      15.983  18.968   3.053  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      15.359  18.116   3.954  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201      16.110  17.091   4.498  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201      17.452  16.933   4.138  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      18.068  17.794   3.224  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      17.309  18.824   2.674  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      15.058  24.652   4.766  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      15.685  24.276   5.371  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      10.896  24.917   6.812  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      10.718  23.835   7.407  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      10.780  26.184   7.286  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      10.757  26.940   6.665  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      10.505  26.542   8.697  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201       9.389  25.695   9.283  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      10.062  28.037   8.752  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      11.812  26.252   9.487  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 11
+REMARK VINA RESULT:      -8.5      1.899      7.862
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201      15.440  19.414   3.246  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201      14.930  18.449   4.361  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201      15.761  17.179   4.405  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201      17.228  17.537   4.560  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201      17.686  18.449   3.411  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201      16.910  19.804   3.462  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      14.630  21.385   4.520  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      14.098  20.532   5.605  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201      14.927  19.219   5.698  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      14.514  20.650   3.239  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      13.833  22.597   4.305  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      14.294  23.663   5.310  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      13.280  24.775   5.588  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      11.998  24.190   5.225  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      11.444  24.518   4.040  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      11.982  25.319   3.262  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      11.562  23.551   5.829  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      10.153  23.928   3.768  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      10.076  22.684   3.101  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201       8.857  22.093   2.788  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201       7.696  22.739   3.173  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201       7.763  23.981   3.823  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201       8.978  24.585   4.155  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201       8.964  25.929   4.831  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201       6.611  24.686   4.062  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201       6.617  25.479   3.540  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      13.135  25.199   7.020  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      11.743  24.330   7.771  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      10.655  25.572   8.266  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201       9.341  25.183   8.489  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201       8.434  26.158   8.858  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201       8.847  27.487   8.999  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      10.175  27.866   8.777  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      11.088  26.882   8.409  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      15.484  24.210   4.729  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      15.675  24.971   5.263  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      14.229  21.244   6.923  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      13.221  21.707   7.495  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201      15.537  21.349   7.274  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201      16.237  21.108   6.636  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201      16.035  21.978   8.520  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201      15.961  23.493   8.451  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201      17.527  21.571   8.719  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201      15.099  21.490   9.663  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
+MODEL 12
+REMARK VINA RESULT:      -8.2      1.605      2.224
+REMARK  12 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N7_7  and  C18_18 
+REMARK    2  A    between atoms: C8_8  and  C11_11 
+REMARK       I    between atoms: C11_11  and  N12_12 
+REMARK    3  A    between atoms: N12_12  and  C13_13 
+REMARK    4  A    between atoms: C18_18  and  C19_19 
+REMARK    5  A    between atoms: C19_19  and  C20_20 
+REMARK    6  A    between atoms: C19_19  and  O21_21 
+REMARK    7  A    between atoms: C20_20  and  N22_22 
+REMARK    8  A    between atoms: C20_20  and  C23_23 
+REMARK       I    between atoms: N22_22  and  C24_24 
+REMARK    9  A    between atoms: C23_23  and  S74_34 
+REMARK   10  A    between atoms: C24_24  and  C29_26 
+REMARK   11  A    between atoms: C33_30  and  O38_32 
+REMARK   12  A    between atoms: S74_34  and  C77_35 
+ROOT
+ATOM      1  C1  1UN A 201       9.932  24.061   2.944  1.00 24.55     0.018 C 
+ATOM      2  C2  1UN A 201       9.514  25.562   3.016  1.00 20.71    -0.006 C 
+ATOM      3  C3  1UN A 201       8.246  25.814   2.220  1.00 19.44     0.005 C 
+ATOM      4  C4  1UN A 201       7.153  24.874   2.695  1.00 21.07     0.000 C 
+ATOM      5  C5  1UN A 201       7.602  23.411   2.558  1.00 24.78     0.000 C 
+ATOM      6  C6  1UN A 201       8.829  23.138   3.485  1.00 20.62     0.007 C 
+ATOM      7  N7  1UN A 201      11.027  24.213   5.167  1.00 21.30     0.105 N 
+ATOM      8  C8  1UN A 201      10.689  25.647   5.294  1.00 20.47     0.314 C 
+ATOM      9  C9  1UN A 201       9.386  25.954   4.503  1.00 21.72     0.050 C 
+ATOM     10  C10 1UN A 201      11.249  23.904   3.734  1.00 23.23     0.278 C 
+ENDROOT
+BRANCH   7  11
+ATOM     11  C18 1UN A 201      12.302  23.869   5.803  1.00 22.63     0.307 C 
+BRANCH  11  12
+ATOM     12  C19 1UN A 201      12.074  22.657   6.719  1.00 19.98     0.170 C 
+BRANCH  12  13
+ATOM     13  C20 1UN A 201      13.343  22.053   7.326  1.00 16.51     0.124 C 
+BRANCH  13  14
+ATOM     14  N22 1UN A 201      13.697  20.975   6.415  1.00 14.95    -0.349 N 
+ATOM     15  C24 1UN A 201      14.740  21.146   5.578  1.00 18.85     0.252 C 
+ATOM     16  O25 1UN A 201      15.392  22.200   5.545  1.00  8.39    -0.268 OA
+ATOM     17  HNM 1UN A 201      13.192  20.133   6.432  1.00  0.00     0.163 HD
+BRANCH  15  18
+ATOM     18  C29 1UN A 201      15.006  20.047   4.677  1.00 18.43     0.040 A 
+ATOM     19  C30 1UN A 201      15.382  18.788   5.196  1.00 21.44     0.018 A 
+ATOM     20  C31 1UN A 201      15.679  17.712   4.367  1.00 15.28     0.004 A 
+ATOM     21  C32 1UN A 201      15.570  17.886   2.999  1.00 20.01     0.037 A 
+ATOM     22  C33 1UN A 201      15.211  19.137   2.475  1.00 22.21     0.072 A 
+ATOM     23  C34 1UN A 201      14.898  20.227   3.290  1.00 20.56    -0.013 A 
+ATOM     24  C39 1UN A 201      14.545  21.541   2.650  1.00 15.59     0.052 C 
+BRANCH  22  25
+ATOM     25  O38 1UN A 201      15.255  19.344   1.120  1.00 25.11    -0.360 OA
+ATOM     26  HO  1UN A 201      14.741  18.674   0.686  1.00  0.00     0.217 HD
+ENDBRANCH  22  25
+ENDBRANCH  15  18
+ENDBRANCH  13  14
+BRANCH  13  27
+ATOM     27  C23 1UN A 201      14.547  22.948   7.374  1.00 19.24     0.107 C 
+BRANCH  27  28
+ATOM     28  S74 1UN A 201      15.226  22.960   9.045  1.00 24.64    -0.128 SA
+BRANCH  28  29
+ATOM     29  C77 1UN A 201      16.270  21.591   9.113  1.00 23.51     0.000 A 
+ATOM     30  C78 1UN A 201      15.911  20.590  10.006  1.00 23.21     0.018 A 
+ATOM     31  C79 1UN A 201      16.741  19.490  10.110  1.00 24.60     0.001 A 
+ATOM     32  C80 1UN A 201      17.899  19.406   9.330  1.00 26.95     0.000 A 
+ATOM     33  C81 1UN A 201      18.247  20.417   8.430  1.00 26.67     0.001 A 
+ATOM     34  C82 1UN A 201      17.408  21.523   8.324  1.00 24.28     0.018 A 
+ENDBRANCH  28  29
+ENDBRANCH  27  28
+ENDBRANCH  13  27
+ENDBRANCH  12  13
+BRANCH  12  35
+ATOM     35  O21 1UN A 201      11.418  21.697   5.883  1.00 18.38    -0.392 OA
+ATOM     36  HOL 1UN A 201      10.507  21.961   5.896  1.00  0.00     0.210 HD
+ENDBRANCH  12  35
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+BRANCH   8  37
+ATOM     37  C11 1UN A 201      10.432  25.982   6.737  1.00 17.31     0.252 C 
+ATOM     38  O17 1UN A 201      11.376  26.046   7.550  1.00 12.42    -0.271 OA
+ATOM     39  N12 1UN A 201       9.097  26.096   6.964  1.00 14.35    -0.351 N 
+ATOM     40  HNC 1UN A 201       8.458  25.833   6.273  1.00  0.00     0.163 HD
+BRANCH  39  41
+ATOM     41  C13 1UN A 201       8.483  26.435   8.270  1.00 14.28     0.022 C 
+ATOM     42  C14 1UN A 201       9.150  27.642   8.907  1.00 12.88     0.037 C 
+ATOM     43  C15 1UN A 201       8.657  25.219   9.230  1.00 13.75     0.037 C 
+ATOM     44  C16 1UN A 201       6.997  26.790   7.977  1.00 11.47     0.037 C 
+ENDBRANCH  39  41
+ENDBRANCH   8  37
+TORSDOF 12
+ENDMDL
