@@ -30,7 +30,7 @@ Contains a practical tutorial and lecture slides that aim to:
    
    • Outline the methods available to evaluate the quality of homology models.
 
-### 4)<a href="https://bigginlab.github.io/OxCompBio/docking.html" title="docking">Docking</a>
+### 4) <a href="https://bigginlab.github.io/OxCompBio/docking.html" title="docking">Molecular Docking</a>
 
 A tutorial which aims to teach the basics of molecular docking.
 
