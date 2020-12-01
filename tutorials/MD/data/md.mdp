@@ -29,7 +29,7 @@ fourierspacing          = 0.16      ; grid spacing for FFT
 ; Temperature coupling is on
 tcoupl                  = v-rescale             ; modified Berendsen thermostat
 tc-grps                 = System                ; one coupling group
-tau_t                   = 0.5                   ; time constant, in ps
+tau-t                   = 0.5                   ; time constant, in ps
 ref_t                   = 300                   ; reference temperature, one for each group, in K
 ; Pressure coupling is on
 pcoupl                  = Parrinello-Rahman     ; Pressure coupling on in NPT
