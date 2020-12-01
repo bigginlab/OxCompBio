@@ -14,7 +14,7 @@ compressed-x-grps       = System    ; save the whole system
 continuation            = no        ; Not continuing from previous simulation 
 constraint-algorithm    = lincs     ; holonomic constraints 
 constraints             = h-bonds   ; bonds involving H are constrained
-lincs_iter              = 1         ; accuracy of LINCS
+lincs-iter              = 1         ; accuracy of LINCS
 lincs_order             = 4         ; also related to accuracy
 ; Neighborsearching
 cutoff-scheme           = Verlet    ; Buffered neighbor searching
