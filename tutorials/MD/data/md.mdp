@@ -12,7 +12,7 @@ nstxout-compressed      = 5000      ; save compressed coordinates every 10.0 ps
 compressed-x-grps       = System    ; save the whole system
 ; Bond parameters
 continuation            = no        ; Not continuing from previous simulation 
-constraint_algorithm    = lincs     ; holonomic constraints 
+constraint-algorithm    = lincs     ; holonomic constraints 
 constraints             = h-bonds   ; bonds involving H are constrained
 lincs_iter              = 1         ; accuracy of LINCS
 lincs_order             = 4         ; also related to accuracy
