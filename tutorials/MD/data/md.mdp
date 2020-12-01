@@ -15,7 +15,7 @@ continuation            = no        ; Not continuing from previous simulation
 constraint-algorithm    = lincs     ; holonomic constraints 
 constraints             = h-bonds   ; bonds involving H are constrained
 lincs-iter              = 1         ; accuracy of LINCS
-lincs_order             = 4         ; also related to accuracy
+lincs-order             = 4         ; also related to accuracy
 ; Neighborsearching
 cutoff-scheme           = Verlet    ; Buffered neighbor searching
 ns_type                 = grid      ; search neighboring grid cells
