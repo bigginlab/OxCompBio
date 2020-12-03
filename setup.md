@@ -1,10 +1,16 @@
-# Setup instructions for the Oxford Computational Biochemistry course
+# Main setup instructions for the Oxford Computational Biochemistry course
 
 The Oxford Computational Biochemistry course contains 4 self-contained
 tutorials which each have different software installation requirements. These
-instructions can be found in the respective folder's `setup.md`. Here we
+instructions can be found in the respective tutorial's folder. Here we
 provide some basic instructions on the base setup requirements common to these
 tutorials and how to obtain a local copy of the materials.
+
+In order to ensure that you have everything ready in advance of the workshop,
+we ask that you follow these setup instructions before attending each tutorial.
+Q&A sessions will be setup on the two days preceeding the course to help you
+with any issues you might encounter during the setup process.
+
 
 ## 1. [Anaconda]
 
@@ -19,6 +25,7 @@ will see several invocations of [conda], including to create [environments] and
 install software. If you are unfamiliar with this tool, it is heavily
 recommened that you go through the [getting started guide].
 
+
 ## 2. Using the terminal
 
 Throughout the tutorials we will be interacting with various software through
@@ -28,13 +35,20 @@ navigate through files and quickly execute various programs.
 On linux/macOS this is generally done though a bash/zsh shell.
 
 - In linux this can be accessed by searching for terminal in the startup menu.
+
+(Todo: Insert picture of opening terminal in linux here)
+
 - On macOS this is done by searching for terminal in the Launchpad (see the
   [following for more details][apple terminal support]).
+
+(Todo: Insert picture of opening terminal in macOS here)
 
 On Windows (unless using WSL in which case please follow the linux instructions),
 this will be done via the Anaconda prompt. The Anaconda prompt can be opened by
 searching for it in the startup menu after having installed Anaconda (see the
 step above).
+
+![Anaconda Prompt](./images/main-setup/anaconda-terminal.png)
 
 There are substantial differences in the way in which the terminal works between
 Windows and linx/macOS. We will give a quick overview of the the basics below,
@@ -107,14 +121,6 @@ If you want to print the contents of a file do:
 more file
 ```
 
-If you want to edit a file you need to use an "editor" to do so.
-
-Common editors include (click the links for tutorials):
-
-- [vim]()
-- [gedit](https://help.gnome.org/users/gedit/stable/) (recommended for linux)
-- [nano]()
-
 
 ### Basic Windows Anaconda terminal instructions
 
@@ -177,17 +183,69 @@ If you want to print the contents of a file do:
 more file
 ```
 
-If you want to edit a file, the best option is to invoke notepad:
+### Using editors
 
-```
-notepad file
-```
+At several points during the tutorials you might be asked to edit a file.
 
-By doing so a notepad window will open where you can edit the file, save and
-then safely close the notepad window.
+There are several editors available and generally we recommend you use
+the one that you are most accustomed with (if possible).
+
+Here are our recommendations for editors that can be invoked directly from
+the command line:
+
+#### linux/macOS
+
+- [gedit](https://help.gnome.org/users/gedit/stable/) (recommended for linux, usually pre-installed)
+- [nano](https://wiki.gentoo.org/wiki/Nano/Basics_Guide) (recommended for linux & macOS, pre-installed)
+- [vim](https://www.vim.org/download.php)
+
+#### Windows
+
+- notepad (recommended)
+
+Built into Windows, just type `notepad filename` in your terminal. This will open a
+window where you can edit the file, save and then close the window to get back to
+your terminal.
+
+- [notepad++](https://notepad-plus-plus.org/)
+- [vim](https://www.vim.org/download.php)
 
 
 ## 3. Downloading a local copy of the course materials
+
+In order to carry out the exercies presented in the tutorials you will need to
+download a local copy of the course materials. There are two ways of doing this;
+
+### Recommended: download a copy from github
+
+Simply go to the tutorial github page: https://github.com/bigginlab/OxCompBio
+
+On the top left-hand side of the page you will see a green button titled "Code".
+
+Click on it and then click on "Download ZIP".
+
+(TODO: insert image of this here)
+
+This will download a copy of the course materials to your computer. Then simply
+move the zip file to some convenient folder (ideally easily accessible through your
+terminal), and extract it (macOS: double click, windows: right-click and extract all).
+
+This will create a folder named `OxCompBio`.
+
+### Not recommended: Git clone
+
+This is not a recommended option, but can be useful if you are using linux/macOS
+and are already quite familiar with `git`.
+
+Simply do:
+
+```
+git clone https://github.com/bigginlab/OxCompBio.git
+```
+
+In a convenient place for you to place the course materials. This will download
+everything automatically to a local folder named `OxCompBio`.
+
 
 ## 4. [Jupyter notebooks]
 
@@ -202,8 +260,48 @@ use notebooks:
 - [Codeacademy's jupyter notebook tutorial](https://www.codecademy.com/articles/how-to-use-jupyter-notebooks)
 - [Quick introduction to jupyter notebooks](https://www.youtube.com/watch?v=jZ952vChhuI) (youtube video)
 
+
+Briefly, one usually starts a jupyter notebook session by typing the following in a
+folder where `ipynb` (notebook) files are present:
+
+```
+jupyter notebook
+```
+
+This should automatically open an interaction session in your browser.
+
+(insert picture of jupyter session)
+
+You can then click on the `ipynb` (notebook) file to start it.
+
+Jupyter notebooks are composed of cells, some of which contain normal text
+(with a white background), and code blocks (shaded in grey).
+
+(insert picture of different cells)
+
+Code blocks are meant to be interactive, you can type in them and press
+`shift+Enter` to run the contents of the cells.
+
+You can exit a notebook by clicking File->Close and Halt
+
+(insert picture)
+
+Sometimes when too many things are running, notebooks can start to
+behave erratically, when this happens click on (update command)
+
+(insert picture)
+
+
 ## 5. What to do next
 
+The next step is to do the individual setup steps for each tutorial.
+
+These can be found at the following links:
+
+- [Python](./tutorials/Python/setup.md)
+- [Homology-Modelling](./tutorials/Homology-Modelling/setup.md)
+- [MD](./tutorials/MD/setup.md)
+- [Docking](./tutorials/Docking/setup.md)
 
 [Anaconda]: https://www.anaconda.com/products/individual
 [Anaconda install instructions]: https://www.anaconda.com/products/individual
