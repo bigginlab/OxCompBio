@@ -15,3 +15,6 @@ __pycache__/
 
 # os
 .DS_Store
+
+# generated files
+*.npz

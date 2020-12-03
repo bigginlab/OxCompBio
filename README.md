@@ -30,7 +30,7 @@ Contains a practical tutorial and lecture slides that aim to:
    
    • Outline the methods available to evaluate the quality of homology models.
 
-### 4) Molecular Docking
+### 4) <a href="https://bigginlab.github.io/OxCompBio/docking.html" title="docking">Molecular Docking</a>
 
 A tutorial which aims to teach the basics of molecular docking.
 
@@ -45,3 +45,8 @@ Please see individual tutorials for contributor logs.
 
 Course leader: Professor Philip C. Biggin
 
+## License
+
+The code is released under the [BSD-3](https://opensource.org/licenses/BSD-3-Clause) license (see `LICENSE` file) while other content is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license (see below).
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
