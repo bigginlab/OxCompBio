@@ -35,8 +35,9 @@ navigate through files and quickly execute various programs.
 On linux/macOS this is generally done though a bash/zsh shell.
 
 - In linux this can be accessed by searching for terminal in the startup menu.
+  See below for an example in the ubuntu gnome shell.
 
-(Todo: Insert picture of opening terminal in linux here)
+![Ubuntu shell](./images/main-setup/ubuntu-terminal.png)
 
 - On macOS this is done by searching for terminal in the Launchpad (see the
   [following for more details][apple terminal support]).
@@ -66,7 +67,7 @@ to look at the instructions for the linux terminal before attempting this tutori
 This section only provides a very basic overview of using the bash/zsh shell
 in linux/macOS. For more information please see the following tutorials:
 
-- Tutorials
+- [Ubuntu's terminal tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
 **_On first opening the terminal_**
 
@@ -232,8 +233,7 @@ terminal), and extract it (macOS: double click, windows: right-click and extract
 
 This will create a folder named `OxCompBio`.
 
-### Not recommended: Git clone
-
+### Not recommended: Git clone 
 This is not a recommended option, but can be useful if you are using linux/macOS
 and are already quite familiar with `git`.
 
@@ -261,8 +261,9 @@ use notebooks:
 - [Quick introduction to jupyter notebooks](https://www.youtube.com/watch?v=jZ952vChhuI) (youtube video)
 
 
-Briefly, one usually starts a jupyter notebook session by typing the following in a
-folder where `ipynb` (notebook) files are present:
+Briefly, one usually starts a jupyter notebook session by opening a terminal,
+navigating to the folder where `ipynb` (notebook) files are present, and
+typing the following:
 
 ```
 jupyter notebook
