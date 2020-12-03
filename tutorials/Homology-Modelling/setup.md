@@ -52,6 +52,12 @@ This will be done on the day of the course.
 In your terminal, navigate to the `Homology-Modelling` folder of your local download of
 this tutorial.
 
+Then activate the `OxHomology` conda environment:
+
+```
+conda activate OxHomology
+```
+
 Then start a jupyter notebook instance using:
 
 ```
