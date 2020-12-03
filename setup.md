@@ -42,7 +42,7 @@ On linux/macOS this is generally done though a bash/zsh shell.
 - On macOS this is done by searching for terminal in the Launchpad (see the
   [following for more details][apple terminal support]).
 
-(Todo: Insert picture of opening terminal in macOS here)
+![macos shell](./images/main-setup/macos-terminal.png)
 
 On Windows (unless using WSL in which case please follow the linux instructions),
 this will be done via the Anaconda prompt. The Anaconda prompt can be opened by
@@ -68,6 +68,7 @@ This section only provides a very basic overview of using the bash/zsh shell
 in linux/macOS. For more information please see the following tutorials:
 
 - [Ubuntu's terminal tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
+- [MacOS terminal beginners guide](https://www.youtube.com/watch?v=aKRYQsKR46I) (youtube video)
 
 **_On first opening the terminal_**
 
@@ -134,7 +135,11 @@ more file
 This section only provides a very basic overview of using the Anaconda terminal.
 For more information please see the following tutorials:
 
-- Tutorials
+- [Windows command line tutorial](https://youtu.be/MBBWVgE0ewk) (youtube video)
+  Note: this uses the standard windows command line, but the instructions should carry over
+  to the Anaconda terminal.
+  Disclaimer: we have not watched all 9 videos in the tutorial series and do not take
+  responsibility for any of the contents.
 
 **_On first opening the terminal_**
 
@@ -276,7 +281,7 @@ typing the following:
 jupyter notebook
 ```
 
-This should automatically open an interaction session in your browser.
+This should automatically open an interactive session in your browser.
 
 
 ![jupyter main session](./images/main-setup/jupyter-main-window.png)
