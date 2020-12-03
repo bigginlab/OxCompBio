@@ -115,9 +115,6 @@ Common editors include (click the links for tutorials):
 - [gedit](https://help.gnome.org/users/gedit/stable/) (recommended for linux)
 - [nano]()
 
-**_On first opening the terminal_**
-
-When opening the terminal you will be placed in your
 
 ### Basic Windows Anaconda terminal instructions
 
@@ -125,6 +122,8 @@ This section only provides a very basic overview of using the Anaconda terminal.
 For more information please see the following tutorials:
 
 - Tutorials
+
+**_On first opening the terminal_**
 
 Generally upon opening the terminal you will be placed in your %HOMEPATH% directory.
 This is the base directory where all the main folders (My Documents, Downloads, etc...)
