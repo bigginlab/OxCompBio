@@ -69,3 +69,10 @@ to start the tutorial notebook.
 
 As you will have already done the setup instructions, you can jump directly to
 section `1. Perform a multiple sequence alignment` (although you may find it useful to review the objectives).
+
+
+When you are finished, don't forget to deactivate the environment!
+
+```
+conda deactivate
+```
