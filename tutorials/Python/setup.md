@@ -21,8 +21,8 @@ and that testing passed as expected.
 
 ## 1. Setup
 
-Here we assume you have completed the main setup instructions and have done the
-following:
+Here we assume you have completed the main setup instructions (see [setup.md](../../setup.md)
+and have done the following:
 
 1. You have installed an anaconda distribution
 2. You have access to a terminal
