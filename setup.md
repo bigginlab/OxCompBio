@@ -224,7 +224,7 @@ On the top left-hand side of the page you will see a green button titled "Code".
 
 Click on it and then click on "Download ZIP".
 
-(TODO: insert image of this here)
+![download zip](./images/main-setup/oxcompbio-zipdownload.png)
 
 This will download a copy of the course materials to your computer. Then simply
 move the zip file to some convenient folder (ideally easily accessible through your
@@ -270,26 +270,34 @@ jupyter notebook
 
 This should automatically open an interaction session in your browser.
 
-(insert picture of jupyter session)
+
+![jupyter main session](./images/main-setup/jupyter-main-window.png)
 
 You can then click on the `ipynb` (notebook) file to start it.
 
 Jupyter notebooks are composed of cells, some of which contain normal text
 (with a white background), and code blocks (shaded in grey).
 
-(insert picture of different cells)
+![jupyter cells](./images/main-setup/jupyter-cells.png)
 
 Code blocks are meant to be interactive, you can type in them and press
 `shift+Enter` to run the contents of the cells.
 
-You can exit a notebook by clicking File->Close and Halt
+You can exit a notebook by clicking "File"->"Close and Halt"
 
-(insert picture)
+![jupyter close](./images/main-setup/jupyter-close.png)
 
 Sometimes when too many things are running, notebooks can start to
-behave erratically, when this happens click on (update command)
+behave erratically, when this happens clicking on the "interrupt" button
+may help:
 
-(insert picture)
+![jupyter-interrupt](./images/main-setup/jupyter-interrupt.png)
+
+Alternatively, using one of the "Kernel"->"restart" options can be very useful.
+Particularly, the "Restart & Clear Output" can be useful in cleaning up the notebook's
+outputs and starting again:
+
+![jupyter-restart](./images/main-setup/jupyter-restart.png)
 
 
 ## 5. What to do next
