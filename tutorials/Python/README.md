@@ -6,15 +6,20 @@ The Oxford Computational Biochemistry Python Tutorial is a series of notebooks w
 
 The tutorial is broken down into 12 sections which progressively introduce various python concepts. We recommend that these be followed in order, however those already acquainted with python may wish to skip ahead to some of the later topics.
 
-## Requirements
+## Getting started
 
-Python 3.6 or higher is required for this workshop. Note that Python 2.x will reach End of Life (EOL) the 1st of January 2020. We advise that no new python code be written in Python 2.x.
+Please see the [setup](setup.md) instructions to get started with the tutorial (installation, etc...).
+Note: the instructions included here are tailored for attendees of the Oxford Computational Biochemistry workshop.
 
 ### Conda
 
 This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in [Anaconda python distributions](https://www.anaconda.com/distribution/).
 
-If you are attending the Oxford Computational Biochemistry workshop and are using the Linux VM, this has already been installed for you.
+If you are attending the Oxford Computational Biochemistry workshop, please followin the "getting started instructions above".
+
+## Requirements
+
+Python 3.6 or higher is required for this workshop. Note that Python 2.x will reach End of Life (EOL) the 1st of January 2020. We advise that no new python code be written in Python 2.x.
 
 ### Libraries
 
@@ -30,17 +35,7 @@ Default conda channel:
 * [`nglview`](http://nglviewer.org/nglview/latest/)
 
 
-## Getting Started
-
-### Linux and MacOS
-
-1. These instructions assume that an [anaconda](#Conda) python distribution is installed locally.
-2. Execute the `setup-conda.sh` script which will automatically set up a Python environment named `oxpy`
-3. Activate the conda environment using: `conda activate oxpy`.
-4. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook`.
-5. Navigate to the appropriate tutorial section and open the relevant `.ipynb` file.
-
-### Binder
+## Binder
 
 If you wish to follow this tutorial from your own computer and do not wish to install [anaconda](#Conda) python, or are using Windows, you can run this tutorial completely online using [binder](https://mybinder.org/).
 
