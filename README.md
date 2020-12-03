@@ -3,6 +3,12 @@
 This repository contains the teaching materials for the Oxford Computational Biochemistry course.
 This two and half day course is aimed at graduate students who have had no prior experience in the area of Computational Biochemistry. It assumes no prior knowledge and only tries to cover basic concepts.
 
+## Getting started
+
+In order to participate in these tutorials you will need specific software installations.
+
+To get started, please see the [overall setup instructions](setup.md).
+
 ## Tutorials
 
 ### 1) Molecular Dynamics
