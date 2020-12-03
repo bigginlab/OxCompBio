@@ -123,7 +123,7 @@ If you want to rename a file do:
 mv file newfilename
 ```
 
-If you want to print the contents of a file do:
+If you want to view the contents of a file do:
 
 ```
 more file
@@ -189,7 +189,7 @@ If you want to rename a file do:
 rename file newfilename
 ```
 
-If you want to print the contents of a file do:
+If you want to view the contents of a file do:
 
 ```
 more file
