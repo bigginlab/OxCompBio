@@ -10,6 +10,13 @@ Here we dock small molecules indinavir and nelfinavir into HIV-1 protease.
 
 Please see [https://bigginlab.github.io/OxCompBio/docking.html](https://bigginlab.github.io/OxCompBio/docking.html) for the tutorial instructions, including installation instructions for the software below.
 
+In order to set everything up before the tutorial, you need to complete the following sections:
+
+2. Installing the packages locally
+3. Obtaining the data files and checking it all works
+
+The actual tutorial starts at section 4.
+
 ### Requirements
 
 The following software installations are required to do this workshop:
