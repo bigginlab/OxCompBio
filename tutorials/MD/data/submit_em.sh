@@ -1,16 +1,18 @@
 #!/bin/bash
 
-#SBATCH --time=00:30:00
-
+#SBATCH --partition=htc
+#SBATCH --reservation=training
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=7
+#SBATCH --gres-flag=disable-binding
+#SBATCH --time=01:00:00
 #SBATCH --job-name=EM
 
-#SBATCH --ntasks-per-node=4
-
-#SBATCH --partition=htc
 
 #Load GROMACS
 module purge
 module load gpu/gromacs/2020.1
 
-#Run energy minimisation
-gmx mdrun -deffnm em -v
+#Run Energy Minimization
+gmx mdrun -deffnm em -v -update gpu
