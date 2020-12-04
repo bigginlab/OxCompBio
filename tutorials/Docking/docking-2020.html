@@ -71,19 +71,17 @@ Most of software necessary can be very simply installed under the conda framewor
 <li>This is the first step if you have not already installed conda (or miniconda) on your laptop - Rather than repeating the instructions here, simply head over to <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html</a> and pick
 up the relevant instructions for your operating system.<P>
 
-<li>Next, install the following packages with conda
+<li>Next, install all necessary packages with conda and activate the new environment using
 <pre>
-
-  % conda install -c schrodinger apbs
-  % conda install -c schrodinger pdb2pqr
-  % conda install -c schrodinger pymol
-  $ conda install -c conda-forge openbabel
+  % conda env create -f oxdocking-env.yml
+  % conda activate OxDocking
 </pre>
 
 <li>Next we need to install a package called ADFR - head over to this link to obtain and install the relevant one for your operating system <a href="https://ccsb.scripps.edu/adfr/downloads/">https://ccsb.scripps.edu/adfr/downloads/</A><P>
 
 <li> If you are on a mac or linux then you can install vina via conda like this as well:
 <PRE>
+  % conda activate OxDocking
   % conda install -c bioconda autodock-vina
 </pre>
 
@@ -93,7 +91,7 @@ If you are using windows, you will have to install vina and autodock tools separ
 
 <li>Optional:  For all operating systems AutoDockTools has to be downloaded and installed separately.  You can obtain and install it from here - its part of the mgltools package: <a href="http://mgltools.scripps.edu/downloads">http://mgltools.scripps.edu/downloads</a><P>
 
-	<li> Windows users you will have to add the locations of the exectuables for vina, ADFR_install/bin/reduce, ADFR_install/bin/prepare_receptor and adt.bat to you PATH - google how to add things to your path if you don't know how to do this - in windows 10 there is a gui that allows you to browse and select paths.
+	<li> Windows users you will have to add the locations of the execuables for vina, ADFR_install/bin/reduce, ADFR_install/bin/prepare_receptor and adt.bat to you PATH - google how to add things to your path if you don't know how to do this - in windows 10 there is a gui that allows you to browse and select paths.
 <P>
 
 </ol>
