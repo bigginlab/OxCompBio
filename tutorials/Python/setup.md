@@ -78,6 +78,8 @@ Once completed, we then need to activate this conda environment:
 conda activate OxPython
 ```
 
+### 1.3 Testing the conda environment
+
 As part of the setup process, we will need to activate some jupyter notebook
 extensions, to do this write the following instructions in your terminal:
 
