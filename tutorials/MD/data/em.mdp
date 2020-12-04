@@ -2,12 +2,12 @@
 integrator  = steep         ; Algorithm (steep = steepest descent minimization)
 emtol       = 100.0         ; Stop minimization when the maximum force < 100.0 kJ/mol/nm
 emstep      = 0.01          ; Minimization step size
-nsteps      = 500           ; Maximum number of (minimization) steps to perform
+nsteps      = 200           ; Maximum number of (minimization) steps to perform
 
 ; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
 nstlist         = 1         ; Frequency to update the neighbor list and long range forces
 cutoff-scheme   = Verlet    ; Buffered neighbor searching
-ns_type         = grid      ; Method to determine neighbor list (simple, grid)
+ns-type         = grid      ; Method to determine neighbor list (simple, grid)
 coulombtype     = PME       ; Treatment of long range electrostatic interactions
 rcoulomb        = 1.0       ; Short-range electrostatic cut-off
 rvdw            = 1.0       ; Short-range Van der Waals cut-off
