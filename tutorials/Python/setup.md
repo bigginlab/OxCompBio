@@ -158,7 +158,7 @@ jupyter notebook
 
 From there, navigate to `00_Introduction` to open the notebooks within.
 
-Don't forget to close down the session and deactivate your environment when
+Don't forget to close down the session ("File" -> "Close and Halt" and then "Quit") and deactivate your environment when
 you are done!
 
 ```

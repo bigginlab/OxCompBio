@@ -15,11 +15,11 @@ Note: the instructions included here are tailored for attendees of the Oxford Co
 
 This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in [Anaconda python distributions](https://www.anaconda.com/distribution/).
 
-If you are attending the Oxford Computational Biochemistry workshop, please followin the "getting started instructions above".
+If you are attending the Oxford Computational Biochemistry workshop, please follow the "getting started instructions above".
 
 ## Requirements
 
-Python 3.6 or higher is required for this workshop. Note that Python 2.x will reach End of Life (EOL) the 1st of January 2020. We advise that no new python code be written in Python 2.x.
+Python 3.6 or higher is required for this workshop. Note that Python 2.x reached End of Life (EOL) the 1st of January 2020. We advise that no new Python code be written in Python 2.x.
 
 ### Libraries
 
