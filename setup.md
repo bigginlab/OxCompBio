@@ -233,11 +233,9 @@ your terminal.
 ## 3. Downloading a local copy of the course materials
 
 In order to carry out the exercies presented in the tutorials you will need to
-download a local copy of the course materials. There are two ways of doing this;
+download a local copy of the course materials. Our recommended way is to do the following:
 
-### Recommended: download a copy from github
-
-Simply go to the tutorial github page: [https://github.com/bigginlab/OxCompBio](https://github.com/bigginlab/OxCompBio)
+Go to the tutorial github page: [https://github.com/bigginlab/OxCompBio](https://github.com/bigginlab/OxCompBio)
 
 On the top left-hand side of the page you will see a green button titled "Code".
 
@@ -251,20 +249,11 @@ This will download a copy of the course materials to your computer. Then simply
 move the zip file to some convenient folder (ideally easily accessible through your
 terminal), and extract it (macOS: double click, windows: right-click and extract all).
 
-This will create a folder named `OxCompBio`.
+This will create a folder named `OxCompBio-master`.
 
-### Not recommended: Git clone 
-This is not a recommended option, but can be useful if you are using linux/macOS
-and are already quite familiar with `git`.
-
-Simply do:
-
-```
-git clone https://github.com/bigginlab/OxCompBio.git
-```
-
-In a convenient place for you to place the course materials. This will download
-everything automatically to a local folder named `OxCompBio`.
+Note: there are other more complex way to obtain these materials, such as through
+the use of `git`, however in the interest of easy of use, we shall not discuss them
+here.
 
 
 ## 4. [Jupyter notebooks]
