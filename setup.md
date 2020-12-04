@@ -37,19 +37,25 @@ On linux/macOS this is generally done though a bash/zsh shell.
 - In linux this can be accessed by searching for terminal in the startup menu.
   See below for an example in the ubuntu gnome shell.
 
+
 ![Ubuntu shell](./images/main-setup/ubuntu-terminal.png)
+
 
 - On macOS this is done by searching for terminal in the Launchpad (see the
   [following for more details][apple terminal support]).
 
+
 ![macos shell](./images/main-setup/macos-terminal.png)
+
 
 On Windows (unless using WSL, the Windows Subsystem for Linux, in which case please follow the linux instructions),
 this will be done via the Anaconda prompt. The Anaconda prompt can be opened by
 searching for it in the startup menu after having installed Anaconda (see the
 step above).
 
+
 ![Anaconda Prompt](./images/main-setup/anaconda-terminal.png)
+
 
 There are substantial differences in the way in which the terminal works between
 Windows and linx/macOS. We will give a quick overview of the the basics below,
@@ -237,7 +243,9 @@ On the top left-hand side of the page you will see a green button titled "Code".
 
 Click on it and then click on "Download ZIP".
 
+
 ![download zip](./images/main-setup/oxcompbio-zipdownload.png)
+
 
 This will download a copy of the course materials to your computer. Then simply
 move the zip file to some convenient folder (ideally easily accessible through your
@@ -286,32 +294,45 @@ This should automatically open an interactive session in your browser.
 
 ![jupyter main session](./images/main-setup/jupyter-main-window.png)
 
+
 You can then click on the `.ipynb` (notebook) file to start it.
 
 Jupyter notebooks are composed of cells, some of which contain normal text
-(with a white background), and code blocks (shaded in grey).
+(with a white background), and code blocks (shaded in grey):
+
 
 ![jupyter cells](./images/main-setup/jupyter-cells.png)
+
 
 Code blocks are meant to be interactive, you can type in them and press
 `shift+Enter` to run the contents of the cells.
 
-You can exit a notebook by clicking "File"->"Close and Halt"
+You can exit a notebook by clicking "File"->"Close and Halt":
+
 
 ![jupyter close](./images/main-setup/jupyter-close.png)
+
 
 Sometimes when too many things are running, notebooks can start to
 behave erratically, when this happens clicking on the "interrupt" button
 may help:
 
+
 ![jupyter-interrupt](./images/main-setup/jupyter-interrupt.png)
+
 
 Alternatively, using one of the "Kernel"->"restart" options can be very useful.
 Particularly, the "Restart & Clear Output" can be useful in cleaning up the notebook's
 outputs and starting again:
 
+
 ![jupyter-restart](./images/main-setup/jupyter-restart.png)
-**Note**: In a Jupyter notebook you can run cells in any order you like. This might create problems in the long run, therefore we suggest to run the cells sequentially (from top to bottom). If you start to get strange results within a Jupyter notebook, you can use "Kernel"->"Restart & Run all" to run clean everything up and re-run the notebook from scratch.
+
+
+**Note**: In a Jupyter notebook you can run cells in any order you like. This might create
+problems in the long run, therefore we suggest to run the cells sequentially (from top to bottom).
+If you start to get strange results within a Jupyter notebook, you can use "Kernel"->"Restart & Run all"
+to run clean everything up and re-run the notebook from scratch.
 
 ## 5. What to do next
 
