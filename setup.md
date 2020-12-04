@@ -204,6 +204,7 @@ the command line:
 
 - [gedit](https://help.gnome.org/users/gedit/stable/) (recommended for linux, usually pre-installed)
 - [nano](https://wiki.gentoo.org/wiki/Nano/Basics_Guide) (recommended for linux & macOS, pre-installed)
+- [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac) (for macOS - from the terminal you can issue `open -a TextEdit`)
 - [vim](https://www.vim.org/download.php)
 
 #### Windows
