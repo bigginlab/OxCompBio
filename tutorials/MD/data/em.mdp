@@ -2,7 +2,7 @@
 integrator  = steep         ; Algorithm (steep = steepest descent minimization)
 emtol       = 100.0         ; Stop minimization when the maximum force < 100.0 kJ/mol/nm
 emstep      = 0.01          ; Minimization step size
-nsteps      = 500           ; Maximum number of (minimization) steps to perform
+nsteps      = 200           ; Maximum number of (minimization) steps to perform
 
 ; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
 nstlist         = 1         ; Frequency to update the neighbor list and long range forces
