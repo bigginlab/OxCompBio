@@ -44,7 +44,7 @@ On linux/macOS this is generally done though a bash/zsh shell.
 
 ![macos shell](./images/main-setup/macos-terminal.png)
 
-On Windows (unless using WSL in which case please follow the linux instructions),
+On Windows (unless using WSL, the Windows Subsystem for Linux, in which case please follow the linux instructions),
 this will be done via the Anaconda prompt. The Anaconda prompt can be opened by
 searching for it in the startup menu after having installed Anaconda (see the
 step above).
@@ -231,7 +231,7 @@ download a local copy of the course materials. There are two ways of doing this;
 
 ### Recommended: download a copy from github
 
-Simply go to the tutorial github page: https://github.com/bigginlab/OxCompBio
+Simply go to the tutorial github page: [https://github.com/bigginlab/OxCompBio](https://github.com/bigginlab/OxCompBio)
 
 On the top left-hand side of the page you will see a green button titled "Code".
 
@@ -286,7 +286,7 @@ This should automatically open an interactive session in your browser.
 
 ![jupyter main session](./images/main-setup/jupyter-main-window.png)
 
-You can then click on the `ipynb` (notebook) file to start it.
+You can then click on the `.ipynb` (notebook) file to start it.
 
 Jupyter notebooks are composed of cells, some of which contain normal text
 (with a white background), and code blocks (shaded in grey).
