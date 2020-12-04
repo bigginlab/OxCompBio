@@ -1,9 +1,8 @@
 name: oxpy
 
 channels:
-  - default
   - conda-forge
-
+  - default
 dependencies:
   # Base
   - python=3.6
@@ -12,6 +11,7 @@ dependencies:
 
   # Jupyter
   - jupyter
+  - jupyter_contrib_nbextensions
 
   # Maths
   - numpy
