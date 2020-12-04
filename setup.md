@@ -311,7 +311,7 @@ Particularly, the "Restart & Clear Output" can be useful in cleaning up the note
 outputs and starting again:
 
 ![jupyter-restart](./images/main-setup/jupyter-restart.png)
-
+**Note**: In a Jupyter notebook you can run cells in any order you like. This might create problems in the long run, therefore we suggest to run the cells sequentially (from top to bottom). If you start to get strange results within a Jupyter notebook, you can use "Kernel"->"Restart & Run all" to run clean everything up and re-run the notebook from scratch.
 
 ## 5. What to do next
 
