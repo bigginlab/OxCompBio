@@ -7,7 +7,7 @@ provide some basic instructions on the base setup requirements common to these
 tutorials and how to obtain a local copy of the materials.
 
 In order to ensure that you have everything ready in advance of the workshop,
-we ask that you follow these setup instructions before attending each tutorial.
+we ask that you **follow these setup instructions before attending each tutorial**.
 Q&A sessions will be setup on the two days preceeding the course to help you
 with any issues you might encounter during the setup process.
 
@@ -78,6 +78,12 @@ placed. If you ever need to return to this directory enter the following command
 ```
 cd $HOME
 ```
+or even just
+
+```
+cd
+```
+
 
 **_Seeing and navigating the contents of folders_**
 
