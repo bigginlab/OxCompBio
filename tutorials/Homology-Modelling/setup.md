@@ -11,7 +11,7 @@ Biochemistry Homology Modelling course.
 These are instructions that should be followed prior to the tutorial. These
 will set you started with creating the appropriate conda environment to go
 through the tutorial's contents. Two days have been set aside on the 10th and
-11th of December to do this and setup ask questions to demonstrators where needed.
+11th of December to do this setup and ask questions to demonstrators where needed.
 
 
 ## Installing the pre-requisites
@@ -37,7 +37,7 @@ conda environment within your terminal using:
 conda deactivate
 ```
 
-You can then continue for the setup of the other tutorials:
+You can then continue with the setup of the other tutorials:
 
 - [Main setup instructions](../../setup.md)
 - [Python tutorial](../Python/setup.md)
