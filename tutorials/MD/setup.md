@@ -21,7 +21,7 @@ and that testing passed as expected.
 ### 1.1 Pre-requisites
 
 This tutorial uses the same `conda` environment as the one used in the Python
-tutorial. You will therefore have to complete these [instructions](../Python/setup.md)
+tutorial. You will therefore have to complete the [Python tutorial setup instructions](../Python/setup.md)
 beforehand.
 
 ### 1.2 Activate environment
@@ -77,5 +77,5 @@ jupyter notebook
 
 You should then make your way through the notebooks starting with `01_Introduction.ipynb`.
 
-Please note that you will also be required to also have a free terminal session (linux/macOS)
-or MobaXterm (Windows) in order to connect to ARCUS.
+Please note that you will also be required to also have an opened terminal (linux/macOS)
+or MobaXterm instance (Windows) in order to connect to ARCUS.
