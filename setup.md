@@ -109,6 +109,12 @@ You can change from one folder to another (in this case named 'newfolder') by do
 cd newfolder
 ```
 
+To go back out of the folder, you can do:
+
+```
+cd ..
+```
+
 If you want to know where you are amongst all your folders you can do:
 
 ```
@@ -173,6 +179,12 @@ You can change from one folder to another (in this case named 'newfolder') by do
 
 ```
 cd newfolder
+```
+
+To go back out of the folder, you can do:
+
+```
+cd ..
 ```
 
 If you want to know where you are amongst all your folders you can do:
