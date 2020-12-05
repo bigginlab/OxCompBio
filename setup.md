@@ -332,7 +332,7 @@ These can be found at the following links:
 - [Python](./tutorials/Python/setup.md)
 - [Homology-Modelling](./tutorials/Homology-Modelling/setup.md)
 - [MD](./tutorials/MD/setup.md)
-- [Docking](./tutorials/Docking/setup.md)
+- [Docking](./tutorials/Docking/README.md)
 
 [Anaconda]: https://www.anaconda.com/products/individual
 [Anaconda install instructions]: https://www.anaconda.com/products/individual
