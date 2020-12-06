@@ -11,7 +11,7 @@ To get started, please see the [overall setup instructions](setup.md).
 
 ## Tutorials
 
-### 1) Python [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
+### 1) Python [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython)
 
 A set of jupyter notebooks which aim to teach the basics of python programming assuming no prior knowledge.
 First introducing core concepts such as variables, loops, conditionals and lists, we eventually demonstrate how molecular structures can be analysed using python libraries such as [MDAnalysis](https://www.mdanalysis.org/) and [NGLView](http://nglviewer.org/nglview/latest/).
