@@ -116,7 +116,7 @@ In the top row click on "Cell" -> "Run All", you should see the following:
 
 ![verify output](./images/verify-outputs.png)
 
-Try to move the protein around, you should be able to rotate it.
+Try to move the protein around with the cursor, you should be able to rotate it.
 
 If all this works the installation has been successful.
 
@@ -140,7 +140,7 @@ You can now move on to the setup phase for the other tutorials.
 
 ## 2. Starting the tutorial
 
-Assuming everything went will with the Setup, open a terminal and navigate back
+Assuming everything went well with the Setup, open a terminal and navigate back
 to the Python tutorial (see the instructions above if you need a reminder on how
 to do this).
 
