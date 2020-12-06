@@ -1,11 +1,11 @@
-name: oxpy
+name: OxPython
 
 channels:
   - conda-forge
   - default
 dependencies:
   # Base
-  - python=3.6
+  - python=3.7
   - pip
   - ipython
 
@@ -17,8 +17,8 @@ dependencies:
   - numpy
 
   # Viz
-  - matplotlib
+  - matplotlib<3.3
 
   # MD
-  - MDAnalysis
+  - MDAnalysis==1.0.0
   - nglview
