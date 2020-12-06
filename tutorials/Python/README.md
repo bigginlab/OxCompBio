@@ -1,4 +1,4 @@
-# Oxford Computational Biochemistry Python Tutorial [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
+# Oxford Computational Biochemistry Python Tutorial [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython)
 
 ## Contents
 
@@ -37,13 +37,18 @@ Default conda channel:
 
 ## Binder
 
-If you wish to follow this tutorial from your own computer and do not wish to install [anaconda](#Conda) python, or are using Windows, you can run this tutorial completely online using [binder](https://mybinder.org/).
+The ideal way to participate in this tutorial is by setting up your own local conda environment (see the [setup instructions](setup.md)). However, we appreciate that in some cases this may not be feasible.
 
-Note: binder is a free community-run service, load times can be slow during initialisation. Patience may be required.
+Should this be the case, it is possible to follow most of this tutorial online via the use of [binder](https://mybinder.org/).
 
-1. Click on the following [link](https://mybinder.org/v2/gh/bigginlab/WTcourse/master).
-2. Navigate to the Python tutorial and the relevant tutorial section.
-3. Click on the relevant `.ipynb` file to start the notebook.
+**Note: Binder is a free community-run service, load times can be slow. Patience may be required. Additionally some aspects of the tutorial, such as protein visualisation may not work as intended.**
+
+To use binder:
+
+1. Click on the following [link](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython).
+2. This will start you in the python tutorial folder.
+3. Click on the section you want to do and the relevant `.ipynb` file to start the notebook.
+
 
 ## Acknowledgements
 
