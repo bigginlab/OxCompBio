@@ -45,7 +45,7 @@ Should this be the case, it is possible to follow most of this tutorial online v
 
 To use binder:
 
-1. Click on the following [link](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython).
+1. Click on the following [link](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython).
 2. This will start you in the python tutorial folder.
 3. Click on the section you want to do and the relevant `.ipynb` file to start the notebook.
 
