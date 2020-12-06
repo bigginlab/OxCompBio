@@ -1,4 +1,4 @@
-# Oxford Computational Biochemistry Python Tutorial [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/WTcourse/master)
+# Oxford Computational Biochemistry Python Tutorial [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython)
 
 ## Contents
 
@@ -6,15 +6,20 @@ The Oxford Computational Biochemistry Python Tutorial is a series of notebooks w
 
 The tutorial is broken down into 12 sections which progressively introduce various python concepts. We recommend that these be followed in order, however those already acquainted with python may wish to skip ahead to some of the later topics.
 
-## Requirements
+## Getting started
 
-Python 3.6 or higher is required for this workshop. Note that Python 2.x will reach End of Life (EOL) the 1st of January 2020. We advise that no new python code be written in Python 2.x.
+Please see the [setup](setup.md) instructions to get started with the tutorial (installation, etc...).
+Note: the instructions included here are tailored for attendees of the Oxford Computational Biochemistry workshop.
 
 ### Conda
 
-This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in [Anaconda python distributions](https://www.anaconda.com/distribution/).
+If you are attending the Oxford Computational Biochemistry workshop, please follow the "getting started" instructions above. You will have been instructed to install the [Anaconda python distribution](https://www.anaconda.com/distribution/) in the [main setup instructions](../../setup.md).
 
-If you are attending the Oxford Computational Biochemistry workshop and are using the Linux VM, this has already been installed for you.
+This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in the [miniconda python distributions](https://docs.conda.io/en/latest/miniconda.html).
+
+## Requirements
+
+Python 3.6 or higher is required for this workshop. Note that Python 2.x reached End of Life (EOL) the 1st of January 2020. We advise that no new Python code be written in Python 2.x.
 
 ### Libraries
 
@@ -30,25 +35,20 @@ Default conda channel:
 * [`nglview`](http://nglviewer.org/nglview/latest/)
 
 
-## Getting Started
+## Binder
 
-### Linux and MacOS
+The ideal way to participate in this tutorial is by setting up your own local conda environment (see the [setup instructions](setup.md)). However, we appreciate that in some cases this may not be feasible.
 
-1. These instructions assume that an [anaconda](#Conda) python distribution is installed locally.
-2. Execute the `setup-conda.sh` script which will automatically set up a Python environment named `oxpy`
-3. Activate the conda environment using: `conda activate oxpy`.
-4. Launch [Jupyter Notebook](https://jupyter.org/) with `jupyter notebook`.
-5. Navigate to the appropriate tutorial section and open the relevant `.ipynb` file.
+Should this be the case, it is possible to follow most of this tutorial online via the use of [binder](https://mybinder.org/).
 
-### Binder
+**Note: Binder is a free community-run service, load times can be slow. Patience may be required. Additionally some aspects of the tutorial, such as protein visualisation may not work as intended.**
 
-If you wish to follow this tutorial from your own computer and do not wish to install [anaconda](#Conda) python, or are using Windows, you can run this tutorial completely online using [binder](https://mybinder.org/).
+To use binder:
 
-Note: binder is a free community-run service, load times can be slow during initialisation. Patience may be required.
+1. Click on the following [link](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython).
+2. This will start you in the python tutorial folder.
+3. Click on the section you want to do and the relevant `.ipynb` file to start the notebook.
 
-1. Click on the following [link](https://mybinder.org/v2/gh/bigginlab/WTcourse/master).
-2. Navigate to the Python tutorial and the relevant tutorial section.
-3. Click on the relevant `.ipynb` file to start the notebook.
 
 ## Acknowledgements
 
