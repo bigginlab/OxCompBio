@@ -13,7 +13,7 @@ Note: the instructions included here are tailored for attendees of the Oxford Co
 
 ### Conda
 
-If you are attending the Oxford Computational Biochemistry workshop, please follow the "getting started instructions above. You will have been instructed to install the [Anaconda python distribution](https://www.anaconda.com/distribution/) in the [main setup instructions](../../setup.md).
+If you are attending the Oxford Computational Biochemistry workshop, please follow the "getting started" instructions above. You will have been instructed to install the [Anaconda python distribution](https://www.anaconda.com/distribution/) in the [main setup instructions](../../setup.md).
 
 This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in the [miniconda python distributions](https://docs.conda.io/en/latest/miniconda.html).
 
