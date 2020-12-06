@@ -17,7 +17,15 @@ In order to set everything up before the tutorial, you need to complete the foll
 
 The actual tutorial starts at section 4.
 
-### Requirements
+You can navigate to the other setup instructions through the following:
+
+- [Return to the main setup instructions](../../setup.md)
+- [Python tutorial setup instructions](../Python/setup.md)
+- [MD tutorial setup instructions](../MD/setup.md)
+- [Homology Modelling setup instructions](../Homology-Modelling/setup.md)
+
+
+## Requirements
 
 The following software installations are required to do this workshop:
 
