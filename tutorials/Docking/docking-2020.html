@@ -54,7 +54,6 @@ Anything that starts with the symbol <tt>%</tt> should be run in a command line 
 </p>
 
 <h2><li><a name="install" id="install">Installing the packages locally</a></li></h2>
-<P>If you are undertaking this practical within the teaching labs in Oxford you can skip this section and head on down to a <a href="#data">Obtaining the data files and checking it all works</a> as everything should already be installed and working.  Ask a Demonstator if not.
 
 <h3>Getting the relevant software</h3>
 <p>
@@ -71,19 +70,17 @@ Most of software necessary can be very simply installed under the conda framewor
 <li>This is the first step if you have not already installed conda (or miniconda) on your laptop - Rather than repeating the instructions here, simply head over to <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html</a> and pick
 up the relevant instructions for your operating system.<P>
 
-<li>Next, install the following packages with conda
+<li>Next, install all necessary packages with conda and activate the new environment using
 <pre>
-
-  % conda install -c schrodinger apbs
-  % conda install -c schrodinger pdb2pqr
-  % conda install -c schrodinger pymol
-  $ conda install -c conda-forge openbabel
+  % conda env create -f oxdocking-env.yml
+  % conda activate OxDocking
 </pre>
 
 <li>Next we need to install a package called ADFR - head over to this link to obtain and install the relevant one for your operating system <a href="https://ccsb.scripps.edu/adfr/downloads/">https://ccsb.scripps.edu/adfr/downloads/</A><P>
 
 <li> If you are on a mac or linux then you can install vina via conda like this as well:
 <PRE>
+  % conda activate OxDocking
   % conda install -c bioconda autodock-vina
 </pre>
 
@@ -93,7 +90,7 @@ If you are using windows, you will have to install vina and autodock tools separ
 
 <li>Optional:  For all operating systems AutoDockTools has to be downloaded and installed separately.  You can obtain and install it from here - its part of the mgltools package: <a href="http://mgltools.scripps.edu/downloads">http://mgltools.scripps.edu/downloads</a><P>
 
-	<li> Windows users you will have to add the locations of the exectuables for vina, ADFR_install/bin/reduce, ADFR_install/bin/prepare_receptor and adt.bat to you PATH - google how to add things to your path if you don't know how to do this - in windows 10 there is a gui that allows you to browse and select paths.
+	<li> Windows users you will have to add the locations of the executables for vina, ADFR_install/bin/reduce, ADFR_install/bin/prepare_receptor and adt.bat to you PATH - google how to add things to your path if you don't know how to do this - in windows 10 there is a gui that allows you to browse and select paths.
 <P>
 
 </ol>
@@ -119,7 +116,7 @@ Now we have all the packages installed we should just check through that all of 
 <li> Now lets get all the data files you need for this practical - they can be found here: <br><a
 href="http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2020.tar.gz">http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2020.tar.gz</a>. Download and save it to your Desktop. (<i>Note:</i> To do this, you might have to right click the link, select "<b>Save Link As...</b>" and make sure the folder in "<b>Save in folder</b>" is <b>Desktop</b>. Click <b>Save</b>)<P>
 
-<li> On your Desktop, right click the downloaded file <tt>docking-2020.tar.gz</tt> and select <b>Extract here</b>. This should create a directory called <tt>dock-prac</tt> on your Desktop.  Alternatively, copy the archive to your desktop from where it was dowloaded to  and then do "tar xf docking-2020.tar.gz" (note this will work in windows 10 now directly - older windows will probably require winzip or equivalent to unpack).
+<li> On your Desktop, right click the downloaded file <tt>docking-2020.tar.gz</tt> and select <b>Extract here</b>. This should create a directory called <tt>dock-prac</tt> on your Desktop.  Alternatively, copy the archive to your desktop from where it was downloaded to  and then do "tar xf docking-2020.tar.gz" (note this will work in windows 10 now directly - older windows will probably require winzip or equivalent to unpack).
 </ol>
 
 <h2><li><a name="exercise1" id="exercise1">Exercise 1: Visualising the protein</a></li></h2>
@@ -133,9 +130,10 @@ Indinavir (Source: http://en.wikipedia.org/wiki/Indinavir)
 </table>
 <br>
 <ol type="i" class="roman">
-<li>In a terminal (open a new terminal if you don't have one open already), change to the docking practical directory.
+<li>In a terminal (open a new terminal if you don't have one open already), change to the docking practical directory and activate the conda environment you created in section 2.
 <pre>
 % cd ~/Desktop/dock-prac
+% conda activate OxPython
 % mkdir 1HSG
 % cd 1HSG
 </pre>
@@ -277,7 +275,7 @@ This defines your protein (<tt>receptor</tt>), ligand, number of docking modes t
 
 <h2><li><a name="exercise3" id="exercise3">Exercise 3: Docking indinavir into HIV-1 protease</a></li></h2>
 <ol type="i" class="roman">
-<li>For this practical, we will use a program called <b>Autodock Vina</b> <a href="#references">[4]</a> for docking. Autodock Vina is a fast docking alogorithm that requires minimal user intervention. We will run it from a terminal.
+<li>For this practical, we will use a program called <b>Autodock Vina</b> <a href="#references">[4]</a> for docking. Autodock Vina is a fast docking algorithm that requires minimal user intervention. We will run it from a terminal.
 <li>Make sure you are in the folder containing <tt>1HSG_protein.pdbqt</tt>, <tt>indinavir.pdbqt</tt> and <tt>config.txt</tt>
 <li>Run <tt>vina</tt> to perform the docking. We will keep a log of all the program output in a file <tt>log.txt</tt>
 <pre>
@@ -298,7 +296,7 @@ This will take a few minutes depending on how fast your computer is. While you w
 
 <h2><li><a name="exercise4" id="exercise4">Exercise 4: Docking nelfinavir into HIV-1 protease</a></li></h2>
 <ol type="i" class="roman">
-<li>In the previous exercise, AutoDock Vina should have found a near native docked conformation for the drug <b>indinavir</b>. In this exercise, we will try to dock another drug <a href="http://en.wikipedia.org/wiki/Nelfinavir" taret="new"><b>nelfinavir</b></a> into the protein structure 1HSG broadly along the lines of how one would dock a small molecule into a target structure. This approach could be refined and extended to the "<a href="http://en.wikipedia.org/wiki/Virtual_screening" target="new">virtual screening</a>" approach.
+<li>In the previous exercise, AutoDock Vina should have found a near native docked conformation for the drug <b>indinavir</b>. In this exercise, we will try to dock another drug <a href="http://en.wikipedia.org/wiki/Nelfinavir" target="new"><b>nelfinavir</b></a> into the protein structure 1HSG broadly along the lines of how one would dock a small molecule into a target structure. This approach could be refined and extended to the "<a href="http://en.wikipedia.org/wiki/Virtual_screening" target="new">virtual screening</a>" approach.
 <table align="center" border="0">
 <tr><td align="center">
 <img src="images/nelfinavir.png" alt="Indinavir" width="250"><br>
@@ -457,10 +455,10 @@ In this practical, we have looked at how small molecules could be docked into a 
 
 <h2><li><a name="references" id="references">References</a></li></h2>
 <ol>
-<li>Brik A, Wong CH. "<a href="http://dx.doi.org/10.1039/b208248a" taret="new">HIV-1 protease: mechanism and drug discovery</a>". Org. Biomol. Chem. (2003) 1:5–14.
+<li>Brik A, Wong CH. "<a href="http://dx.doi.org/10.1039/b208248a" target="new">HIV-1 protease: mechanism and drug discovery</a>". Org. Biomol. Chem. (2003) 1:5–14.
 <li>Wensing AM, van Maarseveen NM, Nijhuis M. "<a href="http://dx.doi.org/10.1016/j.antiviral.2009.10.003" target="new">Fifteen years of HIV Protease Inhibitors: raising the barrier to resistance.</a>" Antiviral Res. (2009) Online in advance of print.
 <li>Chen Z, Li Y, Chen E, Hall DL, Darke PL, Culberson C, Shafer JA, Kuo LC. "<a href="http://www.jbc.org/content/269/42/26344.long">Crystal structure at 1.9-A resolution of human immunodeficiency virus (HIV) II protease complexed with L-735,524, an orally bioavailable inhibitor of the HIV proteases.</a>" J. Biol. Chem. (1994) 269:26344-26348.
-<li>Trott O, Olson AJ. "<a href="http://dx.doi.org/10.1002/jcc.21334" taret="new">AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization and multithreading</a>", J.  Comput. Chem. (2009)
+<li>Trott O, Olson AJ. "<a href="http://dx.doi.org/10.1002/jcc.21334" target="new">AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization and multithreading</a>", J.  Comput. Chem. (2009)
 <li>Baker NA, Sept D, Joseph S, Holst MJ, McCammon JA. "<a href="http://dx.doi.org/10.1073/pnas.181342398" target="new">Electrostatics of nanosystems: application to microtubules and the ribosome.</a>" Proc. Natl. Acad. Sci. (2001) 98:10037-10041.
 </ol>
 
