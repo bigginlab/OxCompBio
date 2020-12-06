@@ -1,6 +1,14 @@
 # Setup instructions for the Oxford Computational Biochemistry Python course
 
-Navigation: [return to main setup page](../../setup.md)
+### Navigation
+
+- [Return to main setup page](../../setup.md)
+- [MD tutorial](../MD/setup.md)
+- [Docking tutorial](../Docking/README.md)
+- [Homology modelling tutorial](../Homology-Modelling/setup.md)
+
+
+## Contents
 
 Included here are instructions to help you get started with the Oxford
 Computational Biochemistry Python course. The instructions are split into
@@ -134,7 +142,7 @@ You can now move on to the setup phase for the other tutorials.
 
 - [Main setup page](../../setup.md)
 - [MD tutorial](../MD/setup.md)
-- [Docking tutorial](../Docking/setup.md)
+- [Docking tutorial](../Docking/README.md)
 - [Homology modelling tutorial](../Homology-Modelling/setup.md)
 
 
