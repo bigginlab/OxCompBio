@@ -1,5 +1,14 @@
 # Setup instructions for the Oxford Computational Biochemistry Molecular Dynamics (MD) course
 
+### Navigation
+
+- [Return to the main setup page](../../setup.md)
+- [Python tutorial setup page](../Python/setup.md)
+- [Homology modelling tutorial setup page](../Homology-Modelling/setup.md)
+- [Docking tutorial setup page](../Docking/README.md)
+
+## Contents
+
 Included here are instructions to help you get started with the Oxford Computational Biochemistry MD course.
 
 The instructions are split into two parts:
@@ -55,6 +64,9 @@ Once finished with the notebook, please remember to deactivate your conda enviro
 ```
 conda deactivate
 ```
+
+You can now continue with the setup for the other tutorials. See "Navigation" above
+for links to the other setup instructions.
 
 
 ## 2. Starting the tutorial
