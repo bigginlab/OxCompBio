@@ -8,3 +8,4 @@
 - Ranjit Vijayan
 - Afroditi-Maria Zaki
 - Irfan Alibay
+- Rocco Meli
