@@ -11,5 +11,5 @@ dependencies:
 
   - apbs
   - pdb2pqr
-  - pymol
+  - pymol-bundle
   - openbabel
