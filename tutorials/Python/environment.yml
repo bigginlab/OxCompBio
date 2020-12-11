@@ -1,0 +1,24 @@
+name: OxPython
+
+channels:
+  - conda-forge
+  - default
+dependencies:
+  # Base
+  - python=3.7
+  - pip
+  - ipython
+
+  # Jupyter
+  - jupyter
+  - jupyter_contrib_nbextensions
+
+  # Maths
+  - numpy
+
+  # Viz
+  - matplotlib<3.3
+
+  # MD
+  - MDAnalysis==1.0.0
+  - nglview
