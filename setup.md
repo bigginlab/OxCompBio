@@ -1,5 +1,16 @@
 # Main setup instructions for the Oxford Computational Biochemistry course
 
+#### Navigation
+
+- [Return to the main page](README.md)
+- [Python tutorial setup instructions](./tutorials/Python/setup.md)
+- [MD tutorial setup instructions](./tutorials/MD/setup.md)
+- [Homology modelling tutorial setup instructions](./tutorials/Homology-Modelling/setup.md)
+- [Docking tutorial setup instructions](./tutorials/Docking/README.md)
+
+
+## Contents
+
 The Oxford Computational Biochemistry course contains 4 self-contained
 tutorials which each have different software installation requirements. These
 instructions can be found in the respective tutorial's folder. Here we

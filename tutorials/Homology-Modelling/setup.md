@@ -1,12 +1,20 @@
 # Setup instructions for the Oxford Computational Biochemistry Homology Modelling Course
 
-Navigation: [return to the main setup page](../../setup.md)
+### Navigation
+
+- [Return to the main setup page](../../setup.md)
+- [Python tutorial setup page](../Python/setup.md)
+- [MD tutorial setup page](../MD/setup.md)
+- [Docking tutorial setup page](../Docking/README.md)
+
+
+## Contents
 
 Included here are instructions to get you started with the Oxford Computational
 Biochemistry Homology Modelling course.
 
 
-# 1. Setup
+## 1. Setup
 
 These are instructions that should be followed prior to the tutorial. These
 will set you started with creating the appropriate conda environment to go
@@ -14,12 +22,12 @@ through the tutorial's contents. Two days have been set aside on the 10th and
 11th of December to do this setup and ask questions to demonstrators where needed.
 
 
-## Installing the pre-requisites
+### Installing the pre-requisites
 
 The install instructions are all contained within the tutorial notebook
-`homology-modelling-tutorial.ipynb`.
+`homology-modelling-tutorial.ipynb`. [Click here to open it in your browser](homology-modelling-tutorial.ipynb).
 
-We recommend that you open it on github and then using a terminal
+We recommend that you open it using the aforementioned link and then using a terminal
 (see [main setup instructions](../../setup.md)) go from `Objectives` through
 to just before `1. Perform a multiple sequence alignment`.
 
@@ -39,13 +47,13 @@ conda deactivate
 
 You can then continue with the setup of the other tutorials:
 
-- [Main setup instructions](../../setup.md)
-- [Python tutorial](../Python/setup.md)
-- [MD tutorial](../MD/setup.md)
-- [Docking](../Docking/README.md)
+- [Return to the main setup page](../../setup.md)
+- [Python tutorial setup page](../Python/setup.md)
+- [MD tutorial setup page](../MD/setup.md)
+- [Docking tutorial setup page](../Docking/README.md)
 
 
-# 2. Starting the tutorial
+## 2. Starting the tutorial
 
 This will be done on the day of the course.
 
