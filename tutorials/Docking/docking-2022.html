@@ -1,0 +1,483 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Introduction to in silico docking</title>
+
+<link rel="stylesheet" href="css/dock.css">
+</head><body>
+
+<h1>Session 2: Introduction to <i>in silico</i> docking</h1>
+<b>Phil Biggin</b>  Previous input from Greg Ross and Ranjit Vijayan<br><a href="mailto:philip.biggin@bioch.ox.ac.uk">philip.biggin@bioch.ox.ac.uk</a>
+<P>
+
+</p><h2>Table of Contents</h2>
+<p>
+</p><ol>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#data">Obtaining the data files</a></li>
+<li><a href="#exercise1">Exercise 1: Visualising the protein</a></li>
+<li><a href="#exercise2">Exercise 2: Preparing a ligand and protein for docking</a></li>
+<li><a href="#exercise3">Exercise 3: Docking indinavir into HIV-1 protease</a></li>
+<li><a href="#exercise4">Exercise 4: Docking nelfinavir into HIV-1 protease</a></li>
+<li><a href="#exercise5">Exercise 5: Generating the electrostatic surface of the protein</a></li>
+<li><a href="#discussion">Concluding remarks</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#appendixI">Appendix I: Useful links/resources</a></li>
+<li><a href="#appendixII">Appendix II: Useful Unix/Linux commands</a></li>
+<li><a href="#appendixIII">Appendix III: Installing the packages locally</a></li>
+</ol>
+
+<ol>
+<h2><li><a name="intro" id="intro">Introduction</a></li></h2>
+<h3>Why is docking important?</h3>
+<p>The purpose of this practical is to give a flavour of how one could dock small flexible molecules to a protein structure. Such <i>in silico</i> methods are extremely useful for both finding potential binding sites and also to discover and/or engineer new molecules that could bind to a known site. This is a multi-billion dollar industry. Virtual screening and blind docking are often employed in an attempt to discover new medicines.</p>
+
+<h3>A case study: HIV-1 protease</h3>
+<p>The HIV-1 protease <a href="#references">[1]</a> is an enzyme that is vital for the replication of HIV. It cleaves newly formed polypeptide chains at appropriate locations so that they form functional proteins. Hence, drugs that target this protein could be vital for suppressing viral replication. A handful of drugs - called HIV-1 protease inhibitors (saquinavir, ritonavir, indinavir, nelfinavir, etc.) <a href="#references">[2]</a> - are currently commercially available that inhibit the function of this protein, by binding in catalytic site that binds the polypeptide.
+<table align="center" border="0">
+<tr><td align="center">
+<img src="images/hiv-protease.png" alt="HIV-1 protease" width="500"><br>
+HIV-1 Protease
+</td></tr>
+</table>
+</p>
+
+<h3>What does this practical cover?</h3>
+<p>We will first look at the protein structure (PDB ID: 1HSG) <a href="#references">[3]</a>. We will then try to dock a couple of drug molecules into the binding site to see how well docking can reproduce the binding pose. We will also generate the electrostatic surface of the protein to study a bit more how the drug interacts with the protein.
+</p>
+<P>
+Anything that starts with the symbol <tt>%</tt> should be run in a command line terminal/command prompt and <tt>PyMOL&gt;</tt> should be run in a PyMOL command line. If this is your first acquaintance with Linux, it is strongly recommended to have a look at Appendix II for some useful Linux commands.  Very little knowledge is assumed and this really is an undergraduate level introduction to using these tools and docking.  If you are trying to do this on your own locally, then the hardest step is likely to be installing all the relevant software parts!
+</p>
+
+
+<h2><li><a name="data" id="data">Obtaining the data files and checking it all works</a></li></h2>
+
+Before we start, we should just check through that all of the following tools are working.
+
+<pre>
+% cd ~/Desktop
+% vina --version
+% pymol -c
+% adt -h
+</pre>
+
+
+<ol type="i" class="roman">
+<li> Now lets get all the data files you need for this practical - they can be found here: <br><a
+href="http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2020.tar.gz">http://sbcb.bioch.ox.ac.uk/phil/teaching/docking-2020.tar.gz</a>. Download and save it to your Desktop. (<i>Note:</i> To do this, you might have to right click the link, select "<b>Save Link As...</b>" and make sure the folder in "<b>Save in folder</b>" is <b>Desktop</b>. Click <b>Save</b>). On your Desktop, right click the downloaded file <tt>docking-2020.tar.gz</tt> and select <b>Extract here</b>. This should create a directory called <tt>dock-prac</tt> on your Desktop.
+<br>
+Alternatively, If it has been automatically saved in the Downloads directory, use the terminal to move the compressed  file to your current directory and extract its contents:<P>
+
+<pre>
+% mv ~/Downloads/docking-2020.tar.gz .
+% tar -xvf docking-2020.tar.gz
+</pre>
+
+(Note this will work in windows 10 now directly - older windows will probably require winzip or equivalent to unpack).
+</ol>
+
+<h2><li><a name="exercise1" id="exercise1">Exercise 1: Visualising the protein</a></li></h2>
+<p>In this practical, we will use the structure of the HIV-1 protease - PDB ID: <b>1hsg</b>. This is a 2&Aring; resolution X-ray crystal structure of HIV-1 protease with a bound drug molecule <a href="http://en.wikipedia.org/wiki/Indinavir" target="new"><b>indinavir</b></a>. We will use <tt>pymol</tt> to view the protein, the binding site and the drug molecule. An introduction to PyMOL can be found <a href="http://pymolwiki.org/index.php/Practical_Pymol_for_Beginners" target="new">here</a>.
+</p>
+<table align="center" border="0">
+<tr><td align="center">
+<img src="images/indinavir.png" alt="Indinavir" width="250"><br>
+Indinavir (Source: http://en.wikipedia.org/wiki/Indinavir)
+</td></tr>
+</table>
+<br>
+<ol type="i" class="roman">
+<li>In a terminal (open a new terminal if you don't have one open already), change to the docking practical directory and activate the conda environment you created in section 2.
+<pre>
+% cd ~/Desktop/dock-prac
+% mkdir 1HSG
+% cd 1HSG
+</pre>
+<li>Download the protease structure in PDB format (PDB ID: 1hsg) from the Protein Data Bank (<a href="http://www.pdb.org">http://www.pdb.org</a>). Search using the PDB ID 1hsg. On the results page, click <b>Download Files</b> and select <b>PDB Format</b>. Save it in <tt>~/Desktop/dock-prac/1hsg</tt>. If the internet is down you can get a copy from <tt>~/Desktop/dock-prac/backup/data/1hsg.pdb</tt>. (<i>Note:</i> Once again you might have to right click, select <b>Save Link As...</b> and browse to <tt>/home/biocomp/Desktop/dock-prac/1hsg</tt>. Make sure you set the filename <b>Name</b> to 1hsg.pdb. Click <b>Save</b>)
+<li>Load the structure into <tt>pymol</tt>. You should see the protein structure displayed as lines and water molecules as little red crosses.
+<pre>
+% pymol 1hsg.pdb &amp;
+</pre>
+<li>Let's start by hiding everything. Click the <b>H</b> (for hide) next to <b>all</b> in PyMOL's <b>Object Control Panel</b> (the panel on the right with buttons <b>A</b>ctions, <b>H</b>ide, <b>S</b>how, <b>L</b>abel and <b>C</b>olour) and select <b>everything</b>. The screen should be clear now.
+<li>Now show (<b>S</b>) the protein (<b>1hsg</b>) using the <b>cartoon</b> representation and colour (<b>C</b>) by chain to show that it is a homodimer.
+<li>Let's select the ligand indinavir and show it as sticks. In the PyMOL command line (with a "<tt>PyMOL &gt;_</tt>") type
+<pre>
+PyMOL&gt; select indinavir, resn MK1
+</pre>
+<tt>resn MK1</tt> selects the residue MK1, which is indinavir. You should now have an object in the object control panel called <b>(indinavir)</b>. Display it as sticks. Click anywhere in the display screen to unselect the selected atoms.
+<li>Now, rotate (left mouse button), zoom (right mouse button) and move (middle mouse button) the molecule to get an idea where the binding site is. You will need to know where it is for the next exercise .
+<li>Water molecules have the residue name HOH. Select and display all water molecules as red spheres. If you think the spheres are too big, type
+<pre>
+PyMOL&gt; set sphere_mode, 4
+PyMOL&gt; set sphere_scale, 0.4
+</pre>
+<br>
+<div id="question"><b style="color:red;">Q: Water molecules normally have 3 atoms. Why do we see just one atom per water molecule?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: There is a conserved water molecule in the binding site. Can you identify this water molecule? What is its residue ID number?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Looking at the structure, what might have to happen for the ligand to gain access to the binding site?</b></div>
+<br>
+<li>If you would like to save a nice image of the protein, ray trace it and save it as an image file.
+<pre>
+PyMOL&gt; bg_color white
+PyMOL&gt; set depth_cue,0
+PyMOL&gt; ray
+PyMOL&gt; png protein.png
+</pre>
+<li>Close PyMOL by typing <tt>quit</tt> in PyMOL command window or clicking the <b>x</b> in the PyMOL Tcl/Tk GUI window.
+<li>Using <tt>eog</tt>, you can visualise the image you just generated.
+<pre>
+% eog protein.png
+</pre>
+</ol>
+
+<h2><li><a name="exercise2" id="exercise2">Exercise 2: Preparing the protein and ligand for docking</a></li></h2>
+<p>Docking algorithms require each atom to have a charge and an atom type that describes its properties. However, the PDB structure lacks these. So, we have to prep the protein and ligand files to include these values along with the atomic coordinates. Furthermore, for flexible ligand docking, we should also define ligand bonds that are rotatable. All this will be done in a tool called AutoDock Tools (<tt>autodocktools</tt>).</p>
+
+<h3>Prepare the protein using AutoDockTools</h3>
+<ol type="i" class="roman">
+<li>The PDB file (<tt>1hsg.pdb</tt>) contains protein, ligand and water oxygen atoms. First we have to extract just the protein atoms, which are lines that start with the keyword <b>ATOM</b>. Each protein chain is terminated with a line that starts with <b>TER</b>. (If you would like to confirm this, open <tt>1hsg.pdb</tt> in a text editor and scroll through the text.)
+<pre>
+% egrep "^(ATOM|TER)" 1hsg.pdb > 1hsg_protein.pdb  [If you are on linux or mac]
+% findstr "^ATOM ^TER" 1hsg.pdb > 1hsg_protein.pdb  [If you are on windows]
+</pre>
+
+<li>Proteins obtained from the PDB don't have hydrogens (unless the resolution is sub Angstrom or the structure is obtained by neutron diffraction).  So the first step is to add hydrogens, which we will do using AutoDockTools:
+
+<pre>
+% adt &amp;
+</pre>
+<li>Load the protein using <b>File &gt; Read Molecule</b>. Select <tt>1hsg_protein.pdb</tt>. Click <b>Open</b>.<br>
+<b>Note:</b> In ADT, you can translate the molecule by clicking and holding down the right mouse button while moving the mouse, rotate by clicking and holding down the middle button and zoom in/out by using the scroll wheel of the mouse.
+<li>Bonds and atoms are shown in white. For better visualisation, colour the structure by atom type - <b>Color &gt; By Atom Type</b>. Click <b>All Geometries</b> and then <b>OK</b>.
+<br>
+<div id="question"><b style="color:red;">Q: Can you locate the binding site visually?</b></div>
+<br>
+<li>Crystal structures normally lack hydrogen atoms. However, hydrogen atoms, or more specifically polar hydrogen atoms are required for appropriate treatment of electrostatics during docking. Add hydrogen atom to the structure using - <b>Edit &gt; Hydrogen &gt; Add</b>. Click <b>OK</b>. You should see a lot of white dashes where the hydrogens were added.
+<li>Now we need to get ADT to assign charges and atom type to each atom in the protein. We do this with <b>Grid &gt; Macromolecule &gt; Choose...</b>. Choose <b>1hsg_protein</b> in the popup window and click <b>Select Molecule</b>. ADT will merge non-polar hydrogens, assign charges and prompt you to save the macromolecule. Click <b>Save</b>. This will create a file called <tt>1hsg_protein.pdbqt</tt> in the current folder. Open this in a text editor and look at the last two columns - these should be the charge and atom type for each atom.<br> 
+<div id="question"><b style="color:red;">Q: Look at the charges. Does it make sense?</b></div>
+<br>
+<li>Whilst we are here, we can also demonstrate how AutoDockTools can be used to define grid box that determines the 3D search space were ligand docking will be attempted. Remember the binding site that you observed in one of the earlier steps. If we do not know the binding site, we will either define a box that encloses the whole protein or perhaps a specific region of the protein. In this case, to speed up the docking process, and because we know where it is, we will define a search space that encloses the known binding site.
+<li>To define the box, use <b>Grid &gt; Grid Box...</b>. This will draw a box with opposite faces coloured in red, green and blue. Fiddle with the dials and see how you can enclose regions of the protein. In this instance we will use a <b>Spacing (angstrom)</b> of <b>1&Aring;</b> (this is essentially a scaling factor). So set this dial to <b>1.000</b>. So that we all get consistent results, let us set the <b>(x, y, z) center</b> as <b>(16, 25, 4)</b> and the <b>number of points in (x, y, z)-dimension</b> as <b>(30, 30, 30)</b>. Make a note of these values. We will need it later. Close the <b>Grid Options</b> dialog by clicking <b>File &gt; Close w/out saving</b>.
+<li>That is all we need to do with the protein file. Delete it from the display using <b>Edit &gt; Delete &gt; Delete Molecule</b> and select <tt>1hsg_protein</tt>. Click <b>Delete Molecule</b> and <b>CONTINUE</b>.
+</ol>
+
+
+<h3>Prepare the ligand with AutoDockTools</h3>
+<ol type="i" class="roman">
+<li>Like the protein, the ligand lacks hydrogen atoms. We need to add hydrogen atoms and also define rotatable bonds that will be used for flexible docking.
+<li>First, extract the ligand atoms from the PDB. As mentioned in Exercise 1, the ligand residue name for <b>indinavir</b> in the PDB file is <b>MK1</b> and the lines start with the keyword <b>HETATM</b> for heteroatoms. In a terminal type
+<pre>
+% grep "^HETATM.*MK1" 1hsg.pdb &gt; indinavir.pdb (on windows: findstr "^HETATM.*MK1" 1hsg.pdb > indinavir.pdb)
+</pre>
+<li>Load the ligand structure into ADT using <b>File &gt; Read Molecule</b> and select <tt>indinavir.pdb</tt>
+<li>Again, colour by atom type. <b>Color &gt; By Atom Type</b>. Click <b>All Geometries</b> and then <b>OK</b>.
+<li>Now we have to add polar hydrogen atoms. Add all hydrogen atoms initially. Non polar hydrogens will be merged in the next step. <b>Edit &gt; Hydrogens &gt; Add</b>. Select <b>All Hydrogens</b> and click <b>OK</b>.
+<li>Define this as the <u>ligand</u> in ADT so that ADT assigns partial charges and sets rotatable ligand bonds using <b>Ligand &gt; Input &gt; Choose...</b>. Select <tt>indinavir</tt> and click <b>Select Molecule for AutoDock4</b>. You should see a message that confirms that non-polar hydrogens have been merged, charges added and rotatable bond detected. Click <b>OK</b>. The ligand will now have only polar hydrogens.
+<li>To check the rotatable bonds detected by ADT, go to <b>Ligand &gt; Torsion Tree &gt; Choose Torsions....</b> You should see 14 rotatable bonds.<br>
+<div id="question"><b style="color:red;">Q: What do the three colours - green, magenta and red  - mean? Does it make sense?</b></div>
+<br>
+<li>Click <b>Done</b> when you are done.
+<li>Save the ligand file in PDBQT format. Do this using <b>Ligand &gt; Output &gt; Save as PDBQT...</b>. Click <b>Save</b> to save the file as <tt>indinavir.pdbqt</tt>.
+<li>Quit ADT using <b>File &gt; Exit</b> and then <b>OK</b>.
+</ol>
+
+<h3>Prepare a docking configuration file</h3>
+
+<ol type="i" class="roman">
+<li>Before we can perform the actual docking, we need to create an input file that defines the protein, ligand and the search parameters. We will create the input file in a text editor.
+<li>If you have used Unix/Linux before, open your favourite text editor - <tt>vi</tt>, <tt>emacs</tt>, <tt>nano</tt> - or use a GUI based editor called <tt>gedit</tt>.
+<pre>
+% gedit &amp; (on windows, could use notepad)
+</pre>
+<li>The input file should look something like:
+<pre>
+receptor = 1hsg_protein.pdbqt
+ligand = indinavir.pdbqt
+
+num_modes = 50
+
+out = all.pdbqt
+
+center_x = XX
+center_y = XX
+center_z = XX
+
+size_x = XX
+size_y = XX
+size_z = XX
+
+seed = 2009
+</pre>
+This defines your protein (<tt>receptor</tt>), ligand, number of docking modes to generate (<tt>num_modes</tt>). All the docked modes will be collated in a file defined by <tt>out</tt> (<tt>all.pdbqt</tt>). You should replace the <b>XX</b> with the center of your 3D search space (<tt>center_x/y/z</tt>) and the size of the box (<tt>size_x/y/z</tt>) that you defined in the "Prepare the protein" section.
+<li>Save the file as <tt>config.txt</tt> in the folder containing the protein and ligand <tt>.pdbqt</tt> files.
+</ol>
+<br>
+
+<h2><li><a name="exercise3" id="exercise3">Exercise 3: Docking indinavir into HIV-1 protease</a></li></h2>
+<ol type="i" class="roman">
+<li>For this practical, we will use a program called <b>Autodock Vina</b> <a href="#references">[4]</a> for docking. Autodock Vina is a fast docking algorithm that requires minimal user intervention. We will run it from a terminal.
+<li>Make sure you are in the folder containing <tt>1hsg_protein.pdbqt</tt>, <tt>indinavir.pdbqt</tt> and <tt>config.txt</tt>
+<li>Run <tt>vina</tt> to perform the docking. We will keep a log of all the program output in a file <tt>log.txt</tt>
+<pre>
+% vina --config config.txt --log log.txt
+</pre>
+This will take a few minutes depending on how fast your computer is. While you wait, if you are interested, read  <a href="#references">[1]</a> for a review on HIV-1 protease structure, function and drug discovery.
+<li>Once the run is complete, you should have a two files <tt>all.pdbqt</tt>, which contains all the docked modes, and <tt>log.txt</tt>, which contains a table of calculated affinities based on AutoDock Vina's scoring function <a href="#references">[4]</a>. The best docked mode, according to AutoDock Vina, is the first entry in <tt>all.pdbqt</tt>.
+<li>Lets visualise the docks and compare it to the crystal conformation of the ligand. Load the protein, the extracted ligand and the docks into <tt>pymol</tt>.
+<pre>
+% pymol 1hsg_protein.pdb indinavir.pdb all.pdbqt &amp;
+</pre>
+<li>Begin by hiding everything. Now, display the <b>protein</b> in <b>cartoon</b> representation, <b>indinavir</b> in <b>stick</b> representation and the <b>docked conformations</b> as <b>sticks</b> as well.
+<li>Cycle through the docks by clicking the playback control buttons on the lower right hand corner of the window.<br>
+<div id="question"><b style="color:red;">Q: Qualitatively, how good are the docks?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Is the crystal binding mode reproduced? If not or if there is a difference, what could be the reason? Is it the best  conformation according to AutoDock Vina?</b></div>
+<br>
+<li>Close PyMOL.
+ </ol>
+
+<h2><li><a name="exercise4" id="exercise4">Exercise 4: Docking nelfinavir into HIV-1 protease</a></li></h2>
+<ol type="i" class="roman">
+<li>In the previous exercise, AutoDock Vina should have found a near native docked conformation for the drug <b>indinavir</b>. In this exercise, we will try to dock another drug <a href="http://en.wikipedia.org/wiki/Nelfinavir" target="new"><b>nelfinavir</b></a> into the protein structure 1HSG broadly along the lines of how one would dock a small molecule into a target structure. This approach could be refined and extended to the "<a href="http://en.wikipedia.org/wiki/Virtual_screening" target="new">virtual screening</a>" approach.
+<table align="center" border="0">
+<tr><td align="center">
+<img src="images/nelfinavir.png" alt="Indinavir" width="250"><br>
+Nelfinavir (Source: http://en.wikipedia.org/wiki/Nelfinavir)
+</td></tr>
+</table>
+<br>
+<li>Start by creating a new directory for this docking run. Your current directory should now be: <tt>~/Desktop/dock-prac/1HSG</tt>.
+<pre>
+% cd ~/Desktop/dock-prac
+% mkdir 1HSG_nelfinavir
+% cd 1HSG_nelfinavir
+</pre>
+<li>Since we will be using the same protein structure to dock <tt>nelfinavir</tt>, copy all the protein related files that you created in "Prepare the protein" section.
+<pre>
+% cp ~/Desktop/dock-prac/1HSG/1hsg* .
+</pre>
+<li>We need a structure of <tt>nelfinavir</tt>. There should be a copy in <tt>~/Desktop/dock-prac/backup/nelfinavir.pdb</tt>. Copy it to the current directory:
+<pre>
+% cp ~/Desktop/dock-prac/backup/data/nelfinavir.pdb .
+</pre>
+<li>Prep the ligand file and generate the PDBQT file - <tt>nelfinavir.pdbqt</tt> - using the steps use in the "<b>Prepare the ligand</b>" section.
+<li>Since the binding site is the same, copy the docking config file - <tt>config.txt</tt> - from the previous exercise to the current directory.
+<pre>
+% cp ~/Desktop/dock-prac/1HSG/config.txt .
+</pre>
+<li>You have to change one entry in the configuration file. Make the change.
+<li>Now you should have everything required by AutoDock Vina to generate a series of docking modes.
+<pre>
+% vina --config config.txt --log log.txt
+</pre>
+This will take a few minutes to run...
+<li>Load the protein and the docked structures and show the protein as cartoon and the docks as sticks.
+<pre>
+% pymol 1hsg_protein.pdb all.pdbqt &
+<br>
+</pre>
+<div id="question"><b style="color:red;">Q: Qualitatively, how good are the docks?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Is it docked in the binding site?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Is the best docked conformation of <tt>nelfinavir</tt> similar to <tt>indinavir</tt>?</b></div> 
+<br>
+<div id="question"><b style="color:red;">Q: Based on the literature, what is common among this class of HIV-1 protease inhibitors?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: How would you check computationally whether the conformation makes sense?</b></div>
+<br>
+<li>Fortunately, in this instance, there are crystal structures of <tt>nelfinavir</tt> bound to HIV-1 protease inhibitor that you can use to validate your docking results.
+<li>Use the Protein Data Bank and download the PDB file for <b>1OHR</b>. Save it in the current directory - <tt>~/Desktop/dock-prac/1hsg_nelfinavir</tt>. (If the internet is down, there should be a copy in <tt>~/Desktop/dock-prac/backup/data/1OHR.pdb</tt>).
+<li>Load this structure into PyMOL using <b>File &gt; Open...</b>. Select <b>1ohr.pdb</b> and click <b>OK</b>.
+<li>Hide all representations of <b>1ohr</b> using <b>H</b> and then <b>everything</b>. Now, display <b>1ohr</b> as <b>cartoon</b> and <b>colour</b> by <b>chain</b>.
+<li>You may have observed that the two HIV-1 protease structures are in different orientations in space. To make sense of the docking results, you have to align the two structures. You can use the PyMOL <tt>align</tt> command to do this. In the PyMOL command line, type:
+<pre>
+PyMOL&gt; align 1ohr, 1hsg_protein
+</pre>
+<b>1ohr</b> should now be overlaid on <b>1hsg_protein</b>
+<br><i>Note:</i> A copy of the aligned structure can be found in <tt>~/Desktop/dock-prac/backup/data/1OHR_aligned.pdb</tt> if the <tt>align</tt> command does not work.<br>
+<div id="question"><b style="color:red;">Q: What is the RMSD of the alignment? Is it qualitatively and quantitatively good?</b></div>
+<br>
+<li>You may have observed that moving the structure around the window is a bit difficult since the origin of the view has been altered when you loaded <tt>1ohr.pdb</tt>. To reset it, try:
+<pre>
+PyMOL&gt; reset
+</pre>
+<li><b>nelfinavir</b> has the residue name <b>1UN</b> in <b>1ohr</b>. Select and display it as sticks.
+<pre>
+PyMOL&gt; select nelfinavir, 1ohr and resn 1UN
+</pre>
+Colour it <b>by element</b> and pick any colour combination.<br>
+<div id="question"><b style="color:red;">Q: Is the "best mode" generated by AutoDock Vina similar to the crystal conformation of <tt>nelfinavir</tt>? If not, why not?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: How about the "second best mode"? Why do you think this is the case?</span> (Hint: Look at the affinities reported in the log file)</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: In this instance we assumed that chain A of 1HSG corresponds to chain A of 1OHR. Is this true always?</b></div>
+<br>
+<li>Let us align chain A of 1ohr to chain B of 1hsg.
+<pre>
+PyMOL&gt; align 1ohr and chain A, 1hsg_protein and chain B
+</pre>
+<br>
+<div id="question"><b style="color:red;">Q: Compare the first two AutoDock Vina docks with the crystal conformation. What does this tell you? What could be a reason for this observation?</b></div>
+<br>
+<li>Close PyMOL when done.
+</ol>
+<br>
+
+<!--
+*** This sort of works - puts the peptide in the right place at least but not convincingly correctly possibly because of peptide construction - might not get right charges?. Perhaps at some point I should refine this...
+
+<h2><li><a name="exercise5" id="exercise5">Exercise 5: Docking a design dipeptide into HIV-1 protease</a></li></h2>
+The HIV-1 protease cleaves the peptide bond of newly formed polypeptide chains at specific recognition sites. Many of the HIV-1 inhibitors and synthetic peptide blockers make use of this property to bind and inhibit the protease's catalytic action. Now, let us do something quite speculative. Let us try to create a dipeptide - <b>Tyr-Pro</b> - and dock it into the protease structure to see whether there is anything common to the dipeptide and the inhibitor poses.
+<ol type="i" class="roman">
+<li>Create a new directory and copy the protein files and also the ligand file for comparison.
+<pre>
+% cd ~/Desktop/dock-prac
+% mkdir 1hsg_dipeptide
+% cd 1hsg_dipeptide
+% cp ../1hsg/1hsg* .
+% cp ../1hsg/indinavir.pdbqt .
+% cp ../1hsg/config.txt .
+</pre>
+<li>Open PyMOL and create the dipeptide structure.
+<pre>
+% pymol
+</pre>
+Go to <b>Build &gt; Residue</b>. Click <b>Tyrosine</b>. Repeat and reselect <b>Proline</b>. <li>Save this structure using <b>File &gt; Save</b>, select <b>pkmol</b> and click <b>OK</b>. Save it as <tt>YP.pdb</tt>
+<li>Quit PyMOL.
+<li>Launch ADT and load <tt>YP.pdb</tt> using <b>File &gt; Read Molecule</b>.
+<li>Follow the steps in Exercise 4 to add hydrogens, define it as a ligand and save the PDBQT file as <tt>yp.pdbqt</tt>
+<li>Modify <tt>config.txt</tt> and run AutoDock Vina.
+<pre>
+% vina --config config.txt --log log.txt
+</pre>
+This will take a few minutes to run...
+<li>Once done, launch load the protein, ligand and the dipeptide docks into PyMOL
+<pre>
+% pymol 1hsg_protein.pdb indinavir.pdb all.pdbqt
+</pre>
+<li><div id="question">Do you see any similarities between <tt>indinavir</tt> and the docked dipeptide structures?</div>
+</ol>
+<br>
+
+http://www.jbc.org/content/263/34/17905.abstract
+
+-->
+
+<h2><li><a name="exercise5" id="exercise5">Generating the electrostatic surface of the protein</a></li></h2>
+By now you might have realised that electrostatics play a very important role in docking molecules. The purpose of this exercise is to generate and view the surface of the HIV-1 protease structure and to see how a ligand interacts with this. We will do this on the <b>APBS (Adaptive-Poisson-Boltzmann Solver) web server</b> and the <b>VMD (Visualise Molecular Dynamics)</b> software
+<ol type="i" class="roman">
+<li>First, create a new directory for this exercise and copy the protein structure - <tt>1hsg_protein.pdb</tt> into this folder.
+<pre>
+% mkdir ~/Desktop/dock-prac/1HSG_APBS
+% cd ~/Desktop/dock-prac/1HSG_APBS
+% cp ~/Desktop/dock-prac/1HSG/1hsg_protein.pdb .    (on windows:  copy ..\1hsg_protein.pdb .)
+% cp ~/Desktop/dock-prac/1HSG/indinavir.pdb .     (on windows:  copy ..\indinavir.pdb .)
+</pre>
+<li>As we found out earlier, PDB structures do not contain partial charges for the atoms in the structure. Partil charges are crucial for electrostatic calculations. In order to use the APBS tool, we first need to generate a PQR file that contains the atom partial charges and can be read by APBS.
+<li>Go to this link <a href="https://server.poissonboltzmann.org/pdb2pqr" target="new"><b>poisson-boltzmann web server</b></a>. Click on the <b>Upload a PBD file</b> tab and then the <b>Select File</b> tab to choose the 1hsg_protein.pdb file from your directory. Select the option <b>Use PROPKA to assign protonation states at provided pH</b> and select the <b>CHARMM</b> Force Field. Finally, select the <b>add/keep chain IDs in the PQR file</b> and click the green <b style="color:green;">Start Job</b> button at the bottom right corner of the screen to run the job. The job should only need a few seconds to finish.
+		<li>Once the job has completed, click on the blue <b style="color:blue;">Use results with APBS</b> button, at the top right corner of the screen. Leave the default PABS configuration as it is and only click the green <b style="color:green;">Start Job</b> button. This job should also need a few seconds only. When the job is completed, you will see a list of several <b>APBS Output Files</b>. The one you will need for thevisualisation of the electrostatic surface of the protein is the one with the .dx suffix. Click <b>Download</b> and save the file to ~/Desktop/dock-prac/1HSG_APBS or, if it is automatically saved in the Downloads directory, then go to the terminal and move it to your working directory:
+<pre>
+% mv ~/Downloads/*.dx .
+</pre>
+<li>To inspect the electrostatic surface of the protein that you just generated, you will use another very powerful tool for molecular visualisation, the <b>VMD (Visual Molecular Dynamics)</b> software. To load the protein and the ligands on VMD, go to the terminal and, on the command line, type:
+<pre>
+% vmd -m 1hsg_protein.pdb indinavir.pdb
+</pre>
+<li>On the tab titled <b>VMD Main</b>, right-click the 1hsg_protein.pdb file and select <b>Load Data into Molecule -> Browse...</b>, choose the .dx file that you obtained previously and hit <b>Load</b>
+<li>The protein, its electrostatic surface and the drug are now loaded, but you need to represent them in a way that will allow you to make useful observations. Go to <b>Graphics -> Graphical Representations</b> and in the <b>Selected Molecule</b> drop-down list, select the protein. From the <b>Coloring Method</b> drop-down list select the <b>Chain</b> and the <b>NewCartoon</b> as the <b>Drawing Method</b>. Then, create one more representation by clicking on the <b>Create Rep</b> button. This time, choose <b>Volume</b> as the <b>Coloring Method</b>, <b>QuickSurf</b> as the <b>Drawing Method</b> and <b>EdgyGlass</b> as the <b>Material</b>. Reduce the <b>Radius Scale</b> to 0.7 and click on the <b>Trajectory</b> tab to change the <b>Color Scale Data Range</b> to extend from <b>-5</b> to <b>5</b> and click <b>Set</b>. To change the representation of the drug, go to the <b>Selected Molecule</b> drop-down list again and select the indinavir.pdb file. In the <b>Draw style</b> tab, change the <b>Drawing Method</b> from <b>Lines</b> to <b>Licorice</b>.
+<li>Now, using the keyboard and the mouse on the <b>VMD Display</b>, you can type <b>r</b> and click to rotate, <b>t</b> to translate and <b>s</b> to zoom in and out. To show or hide a representation, you can double-click on it on the <b>Graphical Representations</b> tab. Spend some time to explore the electrostatic surface of the binding pocket around the ligand.
+<li>Create one more representation. In the <b>Selected Atoms</b> bar, type <b>charged</b> and hit <b>Enter</b>. Change the <b>Coloring Method</b> to <b>ResType</b> and the <b>Drawing Method</b> to <b>Licorice</b>. This action will only show the charged amino acids coloured red if negatively charged and blue if positively charged.
+<br>
+<div id="question"><b style="color:red;">Q: Show/Hide the electrostatic surface and compare with the charged amino acids. Does it match up?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Does anything on the protein surface (in the binding site) stand out?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Why is the base of the binding site largely negative? How is it related to catalysis in this case?</b></div>
+<br>
+<div id="question"><b style="color:red;">Q: Does the protein surface charge (or lack thereof) correspond to complementary regions in the ligand?</b></div>
+<br>
+</ol>
+
+<h2><li><a name="discussion" id="discussion">Concluding remarks</a></li></h2>
+In this practical, we have looked at how small molecules could be docked into a protein. This approach is widely used to detect binding sites and also to screen a library of small molecules to find potential drugs that could bind to a known binding site. Scoring functions play an important role in identifying a "good dock" and as such remains an area of active research. Several other considerations are worth noting including water molecules and ions in the binding site, flexibility of binding site residues, etc. Some docking programs (including AutoDock Vina) allow you to define a subset of flexible sidechains. Whilst this permits binding site rearrangement to accommodate distinct ligands, the computational search space increases many fold. Defining water molecules that are important in the binding site also remains an area of active research. In this practical, we have considered only protein-ligand docking. Protein-protein docking is also widely used, but not considered here due to the significantly higher search space that has to be considered. As the number of published and unpublished protein structures continue to grow, <i>in silico</i> docking will continue to play an important role in the drug discovery process.
+
+
+<h2><li><a name="references" id="references">References</a></li></h2>
+<ol>
+<li>Brik A, Wong CH. "<a href="http://dx.doi.org/10.1039/b208248a" target="new">HIV-1 protease: mechanism and drug discovery</a>". Org. Biomol. Chem. (2003) 1:5–14.
+<li>Wensing AM, van Maarseveen NM, Nijhuis M. "<a href="http://dx.doi.org/10.1016/j.antiviral.2009.10.003" target="new">Fifteen years of HIV Protease Inhibitors: raising the barrier to resistance.</a>" Antiviral Res. (2009) Online in advance of print.
+<li>Chen Z, Li Y, Chen E, Hall DL, Darke PL, Culberson C, Shafer JA, Kuo LC. "<a href="http://www.jbc.org/content/269/42/26344.long">Crystal structure at 1.9-A resolution of human immunodeficiency virus (HIV) II protease complexed with L-735,524, an orally bioavailable inhibitor of the HIV proteases.</a>" J. Biol. Chem. (1994) 269:26344-26348.
+<li>Trott O, Olson AJ. "<a href="http://dx.doi.org/10.1002/jcc.21334" target="new">AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization and multithreading</a>", J.  Comput. Chem. (2009)
+<li>Baker NA, Sept D, Joseph S, Holst MJ, McCammon JA. "<a href="http://dx.doi.org/10.1073/pnas.181342398" target="new">Electrostatics of nanosystems: application to microtubules and the ribosome.</a>" Proc. Natl. Acad. Sci. (2001) 98:10037-10041.
+</ol>
+
+<h2><li><a name="appendixI" id="appendixI">Appendix I: Useful links/resources</a></li></h2>
+<table>
+<tbody><tr><td width="150">PyMOL</td><td><a href="http://www.pymolwiki.org/index.php/Main_Page" target="new">http://www.pymolwiki.org/index.php/Main_Page</a>  (might need to install with conda install -c samoturk pymol)</td>
+</tr><tr><td>VMD</td><td><a href="https://www.ks.uiuc.edu/Research/vmd/" target="new">https://www.ks.uiuc.edu/Research/vmd/</a></td>
+</tr><tr><td>AutoDock Tools</td><td><a href="http://autodock.scripps.edu" target="new">http://autodock.scripps.edu</a></td>
+</tr><tr><td>AutoDock Vina</td><td><a href="http://vina.scripps.edu" target="new">http://vina.scripps.edu</a></td>
+</tr><tr><td>APBS</td><td><a href="https://server.poissonboltzmann.org/" target="new">https://server.poissonboltzmann.org/</a></td>
+</tr></tbody></table>
+
+
+<h2><li><a name="appendixII" id="appendixII">Appendix II: Basic Linux commands</a></li></h2>
+<table>
+<tbody><tr><td width="150"><tt>ls -lrt</tt></td><td>provides a "long" list of all files in the current directory in reverse order of time.</td>
+</tr><tr><td><tt>cd dir</tt></td><td>         change directory to the directory 'dir'</td>
+</tr><tr><td><tt>cd ..</tt></td><td>         move one level up</td>
+</tr><tr><td><tt>pwd</tt></td><td>            print the current working directory on the screen</td>
+</tr><tr><td><tt>rm file</tt></td><td>                delete (remove) 'file'</td>
+</tr><tr><td><tt>mv file newfile</tt></td><td> rename file to newfile</td>
+</tr><tr><td><tt>mv file "new file path"</tt></td><td> move file to new location</td> 
+</tr><tr><td><tt>mv path/to/file .</tt></td><td> move file from path to current directory</td>
+</tr><tr><td><tt>mkdir directoryname</tt></td><td> create new directory</td>
+</tr><tr><td><tt>cat file</tt></td><td>       print the contents of file to the screen</td>
+</tr><tr><td><tt>more  file</tt></td><td>      print the contents of file to the screen but with more navigation possible.</td>
+</tr></tbody></table>
+
+
+<h2><li><a name="appendixIII" id="appendixIII">Appendix III: Getting the relevant software</a></li></h2>
+<tbody>
+This practical is written to be as agnostic to platform as possible and as such it should be possible to run this on your laptop.
+We use the docking program known as Autodock Vina (or just Vina)  (Trott et al, 2009) as it is freely available, very fast, reasonably accurate and is widely used.
+There other tools we need to use are Autodock Tools, PyMOl and VMD.   <P>
+
+Most of software necessary can be very simply installed under the conda framework.  Conda is available on windows, linux and mac.
+<ol type="i" class="roman">
+<li>This is the first step if you have not already installed conda (or miniconda) on your laptop - Rather than repeating the instructions here, simply head over to <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html</a> and pick
+up the relevant instructions for your operating system.<P>
+
+<li>Next, install all necessary packages with conda and activate the new environment using
+<pre>
+  % conda env create -f oxdocking-env.yml
+  % conda activate OxDocking
+</pre>
+
+<li> If you are on a mac or linux then you can install vina and pymol via conda like this as well:
+<PRE>
+  % conda activate OxDocking
+  % conda install -c bioconda autodock-vina
+  % conda install -c schrodinger pymol
+</pre>
+
+If you are using windows, you will have to install vina, pymol and autodock tools separately:<P>
+
+ Full install instructions for vina are here - (including how to build from the source) are here- <a href="http://vina.scripps.edu/manual.html">http://vina.scripps.edu/manual.html</a>)<P>
+
+<li>For all operating systems AutoDockTools has to be downloaded and installed separately.  You can obtain and install it from here - its part of the mgltools package: <a href="http://mgltools.scripps.edu/downloads">http://mgltools.scripps.edu/downloads</a><P>
+
+<li> Windows users you will have to add the locations of the executables for vina, and adt.bat to you PATH - google how to add things to your path if you don't know how to do this - in windows 10 there is a gui that allows you to browse and select paths.
+<P>
+
+</ol>
+
+
+</tbody>
+
+</body>
+</html>
