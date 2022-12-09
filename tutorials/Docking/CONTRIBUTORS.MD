@@ -2,6 +2,10 @@
 
 Authors are added at each year of contribution and sorted by last name alphabetical order.
 
+## 2022
+- Philip Biggin
+- Afroditi-Maria Zaki
+
 ## 2020
 
 - Rocco Meli
