@@ -49,7 +49,7 @@ The tutorial contains:
 The Oxford Computational Biochemistry course has been written by several authors over several years.
 Please see individual tutorials for contributor logs.
 
-Course leader: Professor Philip C. Biggin
+Course leader: Professor Syma Khalid
 
 ## License
 
