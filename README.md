@@ -47,13 +47,10 @@ Contains a practical tutorial and lecture slides that aim to:
    
    • Outline the methods available to evaluate the quality of homology models.
 
-### 3) [Molecular Dynamics](tutorials/MD)
+### 3) Molecular Dynamics
 
-Contains lecture slides on the Molecular Dynamics method and a practical [GROMACS](http://www.gromacs.org/) tutorial that aims to demonstrate how to:
+The Molecular Dynamics workshop contents can be obtained from the following [dropbox link]() 
 
-- Setup, equilibrate and simulate a protein-ligand system in water.
-- Visualise the system and its trajectory with [VMD](https://www.ks.uiuc.edu/Research/vmd/) and [NGLView](http://nglviewer.org/nglview/latest/).
-- Perform basic analysis utilising GROMACS tools, [MDAnalysis](https://www.mdanalysis.org/), and the [matplotlib](https://matplotlib.org/) plotting tool.
 
 ### 4) <a href="https://bigginlab.github.io/OxCompBio/docking.html" title="docking">Molecular Docking</a>
 
