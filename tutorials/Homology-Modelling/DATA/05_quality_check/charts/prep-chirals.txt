@@ -1,0 +1,24 @@
+SUMMARY: 0 total outliers at 373 tetrahedral centers (0.00%)
+SUMMARY: 0 handedness outliers at 323 chiral centers (0.00%)
+SUMMARY: 0 tetrahedral geometry outliers
+SUMMARY: 0 pseudochiral naming errors
+
+
+
+Handedness swaps
+----------------------------------------------------------------------
+None
+----------------------------------------------------------------------
+
+
+Tetrahedral geometry outliers
+----------------------------------------------------------------------
+None
+----------------------------------------------------------------------
+
+
+Probable atom naming errors around pseudochiral centers
+  e.g. CG1 and CG2 around Valine CB
+----------------------------------------------------------------------
+None
+----------------------------------------------------------------------
