@@ -1,0 +1,30 @@
+name: OxPython
+channels:
+  - jaimergp/label/unsupported-cudatoolkit-shim
+  - conda-forge
+dependencies:
+  # Base
+  - python=3.9
+  - pip
+  - ipython
+
+  # Jupyter
+  - notebook
+  - jupyter_contrib_nbextensions
+
+  # Maths
+  - numpy
+
+  # Viz
+  - matplotlib
+
+  # MD
+  - MDAnalysis>=2.0.0
+  - nglview
+  - openmm
+  - parmed
+
+  # testing
+  - pytest
+  - nbval
+  - ipywidgets<8

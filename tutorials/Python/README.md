@@ -1,57 +1,46 @@
-# Oxford Computational Biochemistry Python Tutorial [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython)
+# Oxford Computational Biochemistry Python workshop
 
-## Contents
+This repository contains the teaching materials for the Python workshop from the Oxford Computational Biochemistry course.
 
-The Oxford Computational Biochemistry Python Tutorial is a series of notebooks which aim to teach the basics of python to new users. It assumes no prior knowledge of python or any other programming languages.
-
-The tutorial is broken down into 12 sections which progressively introduce various python concepts. We recommend that these be followed in order, however those already acquainted with python may wish to skip ahead to some of the later topics.
 
 ## Getting started
 
-Please see the [setup](setup.md) instructions to get started with the tutorial (installation, etc...).
-Note: the instructions included here are tailored for attendees of the Oxford Computational Biochemistry workshop.
-
-### Conda
-
-If you are attending the Oxford Computational Biochemistry workshop, please follow the "getting started" instructions above. You will have been instructed to install the [Anaconda python distribution](https://www.anaconda.com/distribution/) in the [main setup instructions](../../setup.md).
-
-This tutorial uses several [libraries](#Libraries) which are not provided in standard python installations. Whilst there are many means by which to install and manage python libraries, we recommend using the `conda` manager which is provided in the [miniconda python distributions](https://docs.conda.io/en/latest/miniconda.html).
-
-## Requirements
-
-Python 3.6 or higher is required for this workshop. Note that Python 2.x reached End of Life (EOL) the 1st of January 2020. We advise that no new Python code be written in Python 2.x.
-
-### Libraries
-
-Default conda channel:
-
-* [`numpy`](https://numpy.org/)
-* [`matplotlib`](https://matplotlib.org/)
-
-[conda-forge](https://conda-forge.org/) channel:
-
-* [`MDAnalysis`](https://www.mdanalysis.org/)
-* [`jupyterlab`](https://jupyterlab.readthedocs.io/en/stable/)
-* [`nglview`](http://nglviewer.org/nglview/latest/)
+In order to participate in this workshop you can either [setup a local Python environment](setup.md), or run the notebooks directly through Binder or Google colab (see badges below).
 
 
-## Binder
+## The Python workshop
 
-The ideal way to participate in this tutorial is by setting up your own local conda environment (see the [setup instructions](setup.md)). However, we appreciate that in some cases this may not be feasible.
 
-Should this be the case, it is possible to follow most of this tutorial online via the use of [binder](https://mybinder.org/).
+Click here to launch the workshop via binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IAlibay/oxcompbio-python/main?urlpath=/tree/)
 
-**Note: Binder is a free community-run service, load times can be slow. Patience may be required. Additionally some aspects of the tutorial, such as protein visualisation may not work as intended.**
+This consists of a set of jupyter notebooks which aim to teach the basics of python programming assuming no prior knowledge.
+First introducing core concepts such as variables, loops, conditionals and lists, we eventually demonstrate how molecular structures can be analysed using python libraries such as [MDAnalysis](https://www.mdanalysis.org/) and [NGLView](http://nglviewer.org/nglview/latest/).
 
-To use binder:
+### Summary of notebooks
 
-1. Click on the following [link](https://mybinder.org/v2/gh/bigginlab/OxCompBio/master?filepath=tutorials%2FPython).
-2. This will start you in the python tutorial folder.
-3. Click on the section you want to do and the relevant `.ipynb` file to start the notebook.
+|  Notebook 	                                  | Colab link |
+|-------------------------------------------------|------------|
+| 0. Introduction                                 | [![notebook 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/00_Introduction/no_solutions/Introduction.ipynb)
+| 1. Basic Types                                  | [![notebook 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/01_BasicTypes/no_solutions/BasicTypes.ipynb)
+| 2. Variables and Comparisons                    | [![notebook 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/02_Variables/no_solutions/Variables_and_Comparisons.ipynb)
+| 3. Loops                                        | [![notebook 4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/03_Loops/no_solutions/Loops.ipynb)
+| 4. Conditionals                                 | [![notebook 5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/04_Conditionals/no_solutions/Conditionals.ipynb)
+| 5. Lists                                        | [![notebook 6](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/05_Lists/no_solutions/Lists.ipynb)
+| 6. File Handling                                | [![notebook 7](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/06_FileHandling/no_solutions/FileHandling.ipynb)
+| 7. Functions                                    | [![notebook 8](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/07_Functions/no_solutions/Functions.ipynb)
+| 8. Documentation                                | [![notebook 9](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/08_Documentation/no_solutions/Documentation.ipynb)
+| 9. Libraries                                    | [![notebook 10](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/09_Libraries/no_solutions/Libraries.ipynb)
+| 10. NumPy                                       | [![notebook 11](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/10_Numpy/no_solutions/Numpy.ipynb)
+| 11. Object Orientated Programming               | [![notebook 12](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/11_OOP/no_solutions/OOP.ipynb)
+| 12. Protein Analysis                            | [![notebook 13](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/12_ProteinAnalysis/no_solutions/ProteinAnalysis.ipynb)
+| 13. Simulation and Analysis                     | [![notebook 14](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/13_Simulation_and_Analysis/no_solutions/Simulation_and_Analysis.ipynb)
 
 
 ## Acknowledgements
 
-This tutorial was first created in 2017 as part of the Oxford Wellcome Trust course. It is the product of the work of several authors who have contributed to it over the years. Please see `CONTRIBUTORS.md` for a full list of acknowledgements. As the tutorial was not originally tracked on github, our apologies if any authors have been missed from this list.
+The Oxford Computational Biochemistry Python workshop has been written by several authors over several years.
+Please see the [contributors list](CONTRIBUTORS.md) for more details.
 
-If you happen to contribute to the python tutorial, please add yourself to this list.
+## License
+
+The notebooks are licensed under a [CC BY-NC 4.0 SA](https://creativecommons.org/licenses/by-nc/4.0/) license (see below).

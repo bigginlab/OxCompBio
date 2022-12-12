@@ -2,6 +2,13 @@
 
 Authors are added at each year of contribution and sorted by last name alphabetical order.
 
+## 2022
+- Irfan Alibay
+
+## 2020
+- Irfan Alibay
+- Rocco Meli
+
 ## 2019
 
 - Irfan Alibay

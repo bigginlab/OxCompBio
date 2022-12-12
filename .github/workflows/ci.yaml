@@ -1,0 +1,50 @@
+name: "CI"
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  schedule:
+    # At 07:00 UTC on Monday and Thursday.
+    - cron: "0 7 * * 1,4"
+
+concurrency:
+  # Cancel out any previous workflows within the same PR
+  group: "${{ github.ref }}-${{ github.head_ref }}-${{ github.workflow }}"
+  cancel-in-progress: True
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.OS }}-latest
+    name: "tests"
+    strategy:
+      fail-fast: False
+      matrix:
+        os: ['ubuntu', 'macos', 'windows']
+        python-version: ['3.7', '3.8', '3.9']
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: True
+          use-mamba: True
+          python-version: ${{ matrix.python-version }}
+          miniforge-variant: Mambaforge
+          environment-file: tests/environment.yml
+          activate-environment: OxPython
+ 
+      - name: "environment information"
+        run: |
+          mamba info -a
+          mamba list
+      - name: "run notebooks tests"
+        run: |
+          pytest -v --nbval-lax
