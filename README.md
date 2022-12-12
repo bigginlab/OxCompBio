@@ -16,6 +16,25 @@ To get started, please see the [overall setup instructions](setup.md).
 A set of jupyter notebooks which aim to teach the basics of python programming assuming no prior knowledge.
 First introducing core concepts such as variables, loops, conditionals and lists, we eventually demonstrate how molecular structures can be analysed using python libraries such as [MDAnalysis](https://www.mdanalysis.org/) and [NGLView](http://nglviewer.org/nglview/latest/).
 
+#### Summary of notebooks
+
+|  Notebook                                       | Colab link |
+|-------------------------------------------------|------------|
+| 0. Introduction                                 | [![notebook 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/00_Introduction/no_solutions/Introduction.ipynb)
+| 1. Basic Types                                  | [![notebook 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/01_BasicTypes/no_solutions/BasicTypes.ipynb)
+| 2. Variables and Comparisons                    | [![notebook 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/02_Variables/no_solutions/Variables_and_Comparisons.ipynb)
+| 3. Loops                                        | [![notebook 4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/03_Loops/no_solutions/Loops.ipynb)
+| 4. Conditionals                                 | [![notebook 5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/04_Conditionals/no_solutions/Conditionals.ipynb)
+| 5. Lists                                        | [![notebook 6](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/05_Lists/no_solutions/Lists.ipynb)
+| 6. File Handling                                | [![notebook 7](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/06_FileHandling/no_solutions/FileHandling.ipynb)
+| 7. Functions                                    | [![notebook 8](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/07_Functions/no_solutions/Functions.ipynb)
+| 8. Documentation                                | [![notebook 9](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/08_Documentation/no_solutions/Documentation.ipynb)
+| 9. Libraries                                    | [![notebook 10](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/09_Libraries/no_solutions/Libraries.ipynb)
+| 10. NumPy                                       | [![notebook 11](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/10_Numpy/no_solutions/Numpy.ipynb)
+| 11. Object Orientated Programming               | [![notebook 12](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/11_OOP/no_solutions/OOP.ipynb)
+| 12. Protein Analysis                            | [![notebook 13](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/12_ProteinAnalysis/no_solutions/ProteinAnalysis.ipynb)
+| 13. Simulation and Analysis                     | [![notebook 14](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IAlibay/oxcompbio-python/blob/main/tutorial/13_Simulation_and_Analysis/no_solutions/Simulation_and_Analysis.ipynb)
+
 ### 2) [Homology Modelling](tutorials/Homology-Modelling)
 
 Contains a practical tutorial and lecture slides that aim to:
